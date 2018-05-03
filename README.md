@@ -14,13 +14,14 @@ Customise your notification like you want:
 ![picture of 3 notifications](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/collections.png)
 ```VBA
 'used commands
-fn_toast_dll "Ups something went wrong!",vberror,0
-fn_toast_dll "Yellow weather warning!",vbexclamation,0
-fn_toast_dll "You've just received a notification",vbinformation,0
+Toastr.Toast "Ups something went wrong!",vberror,0
+Toastr.Toast "Yellow weather warning!",vbexclamation,0
+Toastr.Toast "You've just received a notification",vbinformation,0
 ```
 
 in Action
 ![Notification in action gif](https://github.com/krishKM/VBA_TOOLS/blob/master/InAction.gif)
+![Notification in action gif](https://github.com/krishKM/VBA_TOOLS/blob/master/InAction1.gif)
 
 ### [Receive SignalR Messages]
 This works for me because I do have own signalR server but generally is under development or say not ready yet!
