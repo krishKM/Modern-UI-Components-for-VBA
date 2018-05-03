@@ -1,7 +1,6 @@
 # VBA_TOOLS
 Add this Dll to your VBA projects and have some cool UI features. Have only tested in MS Access but it should work in all VBA environment.
 
-# [List of futures]
 ### [Show non-blocking notifications]
 Inspired from Toastr (https://github.com/CodeSeven/toastr).
 Allowing VBA users to show simple notifications without having to wait or stress their VBA application.
@@ -42,6 +41,8 @@ You can have html ```<a href="">text</a>``` tags in your message which will be t
 Download the sample and test it in your project. Please leave comment how you feel.
 <a href="https://github.com/krishKM/VBA_TOOLS/tree/master/samples"> Samples</a>
 
+# [Other futures that are interesting]
+
 ### [Receive SignalR Messages]
 This works for me because I do have own signalR server but generally is under development or say not ready yet!
 It's like google push messages or any other push message service. You can send notification to all of your logged in yours from one place.
@@ -53,6 +54,16 @@ Again without stressing VBA apps.
 ByteToImage(byte[] byteArraym string TemporaryPath, bool useCache) is a function for MS Access users. Basically you can convert a byteARray received from database into a pictures.
 Will return the path of the image file. Use the path as image location for your image property.
 something like Me.Image32.Picture = gDll.ByteToImage(ByteArray, "SaveLocationPath")
+
+### FTPS_UPLOAD
+simple tool which uses WinScp to upload files securely to your host. Handy if you want to upload some files without doing too much VBA or having activeX components.
+
+
+
+# [Upcoming functions]
+many... :) 
+if you want a specific function email or leave a comment :)
+
 
 
 Copyright © 2018 Krish
