@@ -13,7 +13,7 @@ Allowing VBA users to show simple notifications without having to wait or stress
 With a simple command a little colourful notification pops up with a message without taking any focus or disturbing the user.
 I mainly use it to show messages that do not require action. I.e. A mail has arrived or a task has been completed.
 
-![just a notification](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/information.png)
+![just a notification](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/information.png)
 
 ## customise your notification like you want:
 following customisations are possible now.
@@ -27,7 +27,7 @@ following customisations are possible now.
 
 
 
-![picture of 3 notifications](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/collections.png)
+![picture of 3 notifications](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/collections.png)
 ```VBA
 'used commands
 Toastr.Toast "Ups something went wrong!",vberror,0
@@ -41,7 +41,7 @@ in Action
 
 #### how about little interaction with user and show some hyperlinks?
 You can have html ```<a href="">text</a>``` tags in your message which will be translated into hyperlinks.
-![Notification in action gif](https://github.com/krishKM/VBA_TOOLS/blob/master/Hyperlink.png)
+![Notification in action gif](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/Hyperlink.png)
 
 ## Download 
 Download the sample and test it in your project. Please leave comment how you feel.
