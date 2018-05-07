@@ -1,5 +1,11 @@
 # VBA_TOOLS
-Add this Dll to your VBA projects and have some cool UI features. Have only tested in MS Access but it should work in all VBA environment.
+Add this Dll to your VBA projects and have some cool UI features. Have only tested in MS Access but it should work in all VBA environment. Works with ACCDE too.
+
+# Interesting features
+<ul>
+  <li>Show non-blocking notifications</li>
+  <li>Show Cool DialogBox</li>
+</ul>
 
 ### [Show non-blocking notifications]
 Inspired from Toastr (https://github.com/CodeSeven/toastr).
@@ -40,6 +46,26 @@ You can have html ```<a href="">text</a>``` tags in your message which will be t
 ## Download 
 Download the sample and test it in your project. Please leave comment how you feel.
 <a href="https://github.com/krishKM/VBA_TOOLS/tree/master/samples"> Samples</a>
+
+<hr>
+
+# Show Cool DialogBox
+Standard Message boxes are great but sometimes you want little more than standard features.
+I.e
+<ul>
+  <li>Be able to have some colours</li>
+  <li>Be able to have more than 3 buttons</li>
+  <li>Be able auto-close</li>
+  <li>Be able to use HTML tags </li>
+  <li>not stressing your vba app with a loop?</li>
+</ul>
+Meet the new simplified DialogBox for VBA users. This dialogbox will allow above listed features and should help you to keep your application colourful. :) This feature is still under development and could some feedback from testers.
+
+
+```
+  
+```
+
 
 # [Other futures that are interesting]
 
