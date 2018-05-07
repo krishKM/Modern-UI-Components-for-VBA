@@ -36,8 +36,8 @@ Toastr.Toast "You've just received a notification",vbinformation,0
 ```
 
 in Action
-![Notification in action gif](https://github.com/krishKM/VBA_TOOLS/blob/master/InAction.gif)
-![Notification in action gif](https://github.com/krishKM/VBA_TOOLS/blob/master/InAction1.gif)
+![Notification in action gif](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/InAction.gif)
+![Notification in action gif](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/InAction1.gif)
 
 #### how about little interaction with user and show some hyperlinks?
 You can have html ```<a href="">text</a>``` tags in your message which will be translated into hyperlinks.
@@ -62,8 +62,14 @@ I.e
 Meet the new simplified DialogBox for VBA users. This dialogbox will allow above listed features and should help you to keep your application colourful. :) This feature is still under development and could some feedback from testers.
 
 
+![Cool DialogBox](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/DialogboxGreen.png)
+![Cool DialogBox1](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/4Buttons.png)
+
+There is vba wrapper in the sample accdb which can be extended as per your need. It uses the 3rd party JSON Converter plugin with some miner fixes from my side.
+
 ```
-  
+  'usign the wrapper it would be as simple as 
+  Debug.Print gDll.DialogRich("This is a title", "Some content", (vbExclamation + vbYesNo))
 ```
 
 
