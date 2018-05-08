@@ -1,4 +1,4 @@
-# VBA_TOOLS
+# A friendly helper DLL that will makes you smile.
 No installation, no ActiveX. Just add this Dll to your VBA projects and have some cool UI features. Have only tested in MS Access but it should work in all VBA environment. Works with ACCDE too.
 
 # Interesting features
