@@ -96,6 +96,14 @@ here some samples.
 
 # [Other futures that are interesting]
 
+### Save Clipboard images to local file
+Sometimes, simple things can be very dificult in VBA. If you are after saving clipboard image to a local path. Check this function.
+
+``` SaveClipboardToImage(string PathToSave, string FileName, string ImageType) ``` All parameters are optional and by default Jpeg image type is used. If the clipbord object contains any images, it will be saved wherever you want and the file path is returned.
+in the sample accdb, there is a wrapper ```SaveClipboardToImage``` check it out.
+
+
+
 ### [Receive SignalR Messages]
 This works for me because I do have own signalR server but generally is under development or say not ready yet!
 It's like google push messages or any other push message service. You can send notification to all of your logged in yours from one place.
