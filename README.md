@@ -5,6 +5,7 @@ Add this Dll to your VBA projects and have some cool UI features. Have only test
 <ul>
   <li>Show non-blocking notifications</li>
   <li>Show Cool DialogBox</li>
+  <li>Show Cool Progressbar<li>
 </ul>
 
 ### [Show non-blocking notifications]
@@ -71,6 +72,26 @@ There is vba wrapper in the sample accdb which can be extended as per your need.
   'usign the wrapper it would be as simple as 
   Debug.Print gDll.DialogRich("This is a title", "Some content", (vbExclamation + vbYesNo))
 ```
+
+# Show cool Progressbar
+Progressbars are crucial element when informing users about a progress. Meet the cool progressbar which can pop up on top of your application at any time with a simple code as such as.
+
+```
+  Dim ProgressBarID As Long
+  ProgressBarID = gDll.ShowProgressBar(100, "Executing your query", "Please wait. We are preparing printer drivers")
+    
+  ProgressBarID = gDll.SetProgressBar(ProgressBarID, 10, "Waiting for driver..")
+```
+![Cool ProgressbarGreen](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/ProgressBar.png)
+
+As usual, you are allowed to change theme colours as per your taste.
+![Cool ProgressbarRed](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/ProgressBarRed.png)
+
+### note:
+```ShowProgressBar and SetProgressBar``` returns an ID which you can refer your progressbar to. This also allows VBA users to have multiple progressbars at the same time. 
+
+here some samples.
+
 
 
 # [Other futures that are interesting]
