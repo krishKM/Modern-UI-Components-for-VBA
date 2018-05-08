@@ -5,7 +5,8 @@ No installation, no ActiveX. Just add this Dll to your VBA projects and have som
 <ul>
   <li>Show non-blocking notifications</li>
   <li>Show Cool DialogBox</li>
-  <li>Show Cool Progressbar<li>
+  <li>Show Cool Progressbar</li>
+  <li>Download a file with progressbar</li>
 </ul>
 
 ### [Show non-blocking notifications]
@@ -90,11 +91,18 @@ As usual, you are allowed to change theme colours as per your taste.
 ### note:
 ```ShowProgressBar and SetProgressBar``` returns an ID which you can refer your progressbar to. This also allows VBA users to have multiple progressbars at the same time. 
 
-here some samples.
-
+<hr>
+<hr>
 
 
 # [Other futures that are interesting]
+
+
+### Download a file and show progressbar for vba
+Another cool feature. This function allows you to download a file from the internet and shows the download progress using above cool progressbar.
+
+```DownloadedFile = DLL.DownloadAFile(Url, [Destination], [OverWrite = true], [ShowProgress = true])```
+Except the Url, all other parameters are optional. If destination is not provided. File will be saved in application.path
 
 ### Save Clipboard images to local file
 Sometimes, simple things can be very dificult in VBA. If you are after saving clipboard image to a local path. Check this function.
