@@ -1,5 +1,12 @@
 # A friendly helper DLL that will makes you smile.
-No installation, no ActiveX. Just add this Dll to your VBA projects and have some cool UI features. Have only tested in MS Access but it should work in all VBA environment. Works with ACCDE too.
+No installation, no ActiveX, no Admin-Rights. Just add this Dll to your VBA projects and have some cool UI features. Have only tested in MS Access but it should work in all VBA environment. Works with ACCDE too.
+
+## What is does?
+Helps you to make your application more user-friendly by providing some .NET components and functions that you can use within your VBA application. Visually and functionally better than VBA!
+
+## How to use?
+Some VBA skills are required! Just download the <a href="https://github.com/krishKM/VBA_TOOLS/tree/master/samples"> sample</a> ACCDB from sample folder where you can find the Dll. Copy and paste the functions you require to your VBA application. 
+
 
 # Interesting features
 <ul>
@@ -7,6 +14,7 @@ No installation, no ActiveX. Just add this Dll to your VBA projects and have som
   <li>Show Cool DialogBox</li>
   <li>Show Cool Progressbar</li>
   <li>Download a file with progressbar</li>
+  <li>Show Cool InputBoxes</li>
 </ul>
 
 ### [Show non-blocking notifications]
@@ -90,6 +98,40 @@ As usual, you are allowed to change theme colours as per your taste.
 
 ### note:
 ```ShowProgressBar and SetProgressBar``` returns an ID which you can refer your progressbar to. This also allows VBA users to have multiple progressbars at the same time. 
+
+# Show Cool InputBoxes
+InputBox another heavily used component. Some like the plain system looking InputBox but we love the modern UI colours :)
+What would you chose from these tables?
+<table>
+  <tr>
+    <td>![Boring InputBox](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/InputBoxDefault.png)</td>
+    <td>![Cool InputBox](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/InputBoxMultiline.png)</td>
+  </tr>
+</table>
+
+## Nice colours! but what's the point?
+The new InputBoxes comes with some inbuilt functions and can be configured accordingly.
+Following types are supported now.
+```
+'        Password        = 1, : Masked using systempassword mask
+'        Text            = 2, : Single line text:
+'        MultilineText   = 32, : Multi line text box
+'        Number          = 4, : Numbers only
+'        ShortDate       = 8, : Masked dd/mm/yyyy. Dates are validated upon exit
+'        LongDate        = 16,  : masked using dd/Month/yyyy
+'        DateTime        = 48,  : masked using dd/mm/yyyy hh:mm:ss
+' With the dll in place, use it as
+
+  result = gDll.DLL.showinputbox(Type:=32, Title:="", Message:="Tell us what happened on that day!", ThemeBg:="", ThemeForeColour:="")
+```
+
+in action:
+
+![InputBoxCollection](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/InputBox.png)
+
+as always we can change theme colours:)
+
+![purple input box](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/InputBoxPurple.png)
 
 <hr>
 <hr>
