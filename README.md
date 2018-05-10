@@ -11,9 +11,9 @@ Some VBA skills are required! Just download the <a href="https://github.com/kris
 # Interesting features
 <ul>
   <li>Show non-blocking notifications</li>
-  <li>Show Cool DialogBox</li>
-  <li>Show Cool Progressbar</li>
-  <li>Download a file with progressbar</li>
+  <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#show-cool-dialogbox"> Show Cool DialogBox</a></li>
+  <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#show-cool-progressbar"> Show Cool Progressbar</a></li>
+  <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#other-futures-that-are-interesting"> Download a file with progressbar</a></li>
   <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#show-cool-inputboxes">Show Cool InputBoxes</a></li>
 </ul>
 
