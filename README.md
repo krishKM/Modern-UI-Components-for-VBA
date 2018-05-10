@@ -15,7 +15,7 @@ Some basic VBA skills are required! Just download the <a href="https://github.co
   <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#show-cool-progressbar"> Show Cool Progressbar</a></li>
   <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#other-futures-that-are-interesting"> Download a file with progressbar</a></li>
   <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#show-cool-inputboxes">Show Cool InputBoxes</a></li>
-  <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#Drag-and-drop-OpenFileDialog">Drag and drop OpenFileDialog</a></li>
+  <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#drag-and-drop-openfiledialog">Drag and drop OpenFileDialog</a></li>
   <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#Other-futures-that-are-interesting">Other futures that are interesting</a></li>
 </ul>
 
