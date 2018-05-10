@@ -15,6 +15,7 @@ Some VBA skills are required! Just download the <a href="https://github.com/kris
   <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#show-cool-progressbar"> Show Cool Progressbar</a></li>
   <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#other-futures-that-are-interesting"> Download a file with progressbar</a></li>
   <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#show-cool-inputboxes">Show Cool InputBoxes</a></li>
+  <li>a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#Other-futures-that-are-interesting">Other futures that are interesting</a></li>
 </ul>
 
 ### [Show non-blocking notifications]
@@ -148,6 +149,11 @@ Sometimes, simple things can be very dificult in VBA. If you are after saving cl
 ``` SaveClipboardToImage(string PathToSave, string FileName, string ImageType) ``` All parameters are optional and by default Jpeg image type is used. If the clipbord object contains any images, it will be saved wherever you want and the file path is returned.
 in the sample accdb, there is a wrapper ```SaveClipboardToImage``` check it out.
 
+### PadLeft and PadRight
+Uses .NET padleft and padRight function.
+``` gdll.DLL.PadLeft("1",10,"0") => 0000000001
+    ?gdll.DLL.PadRight("1",10,"0") = > 1000000000
+```     
 
 
 ### [Receive SignalR Messages]
