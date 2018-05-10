@@ -102,12 +102,8 @@ As usual, you are allowed to change theme colours as per your taste.
 # Show Cool InputBoxes
 InputBox another heavily used component. Some like the plain system looking InputBox but we love the modern UI colours :)
 What would you chose from these tables?
-<table>
-  <tr>
-    <td> ![InputBoxCollection](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/InputBoxDefault.png) </td>
-    <td>![Cool InputBox](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/InputBoxMultiline.png)</td>
-  </tr>
-</table>
+
+![InputBoxCollection](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/InputBoxDefault.png)  ![InputBoxCollection](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/InputBoxMultiline.png) 
 
 ## Nice colours! but what's the point?
 The new InputBoxes comes with some inbuilt functions and can be configured accordingly.
