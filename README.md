@@ -14,7 +14,7 @@ Some VBA skills are required! Just download the <a href="https://github.com/kris
   <li>Show Cool DialogBox</li>
   <li>Show Cool Progressbar</li>
   <li>Download a file with progressbar</li>
-  <li>Show Cool InputBoxes</li>
+  <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#show-cool-inputboxes">Show Cool InputBoxes</a></li>
 </ul>
 
 ### [Show non-blocking notifications]
@@ -104,8 +104,8 @@ InputBox another heavily used component. Some like the plain system looking Inpu
 What would you chose from these tables?
 <table>
   <tr>
-    <td>![Boring InputBox](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/InputBoxDefault.png)</td>
-    <td>![Cool InputBox](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/InputBoxMultiline.png)</td>
+    <td> ![InputBoxCollection](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/InputBoxDefault.png) </td>
+    <td>![Cool InputBox](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/InputBoxMultiline.png)</td>
   </tr>
 </table>
 
