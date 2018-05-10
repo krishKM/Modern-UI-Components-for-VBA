@@ -2,10 +2,10 @@
 No installation, no ActiveX, no Admin-Rights. Just add this Dll to your VBA projects and have some cool UI features. Have only tested in MS Access but it should work in all VBA environment. Works with ACCDE too.
 
 ## What is does?
-Helps you to make your application more user-friendly by providing some .NET components and functions that you can use within your VBA application. Visually and functionally better than VBA!
+Helps you to make your application more user-friendly by providing some .NET components and functions that you can use within your VBA application. Visually and functionally cooler than VBA!
 
 ## How to use?
-Some VBA skills are required! Just download the <a href="https://github.com/krishKM/VBA_TOOLS/tree/master/samples"> sample</a> ACCDB from sample folder where you can find the Dll. Copy and paste the functions you require to your VBA application. 
+Some basic VBA skills are required! Just download the <a href="https://github.com/krishKM/VBA_TOOLS/tree/master/samples"> sample</a> ACCDB from sample folder where you can find the Dll. Copy and paste the functions you require to your VBA application. 
 
 
 # Interesting features
@@ -15,7 +15,8 @@ Some VBA skills are required! Just download the <a href="https://github.com/kris
   <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#show-cool-progressbar"> Show Cool Progressbar</a></li>
   <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#other-futures-that-are-interesting"> Download a file with progressbar</a></li>
   <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#show-cool-inputboxes">Show Cool InputBoxes</a></li>
-  <li>a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#Other-futures-that-are-interesting">Other futures that are interesting</a></li>
+  <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#Drag-and-drop-OpenFileDialog">Drag and drop OpenFileDialog</a></li>
+  <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#Other-futures-that-are-interesting">Other futures that are interesting</a></li>
 </ul>
 
 ### [Show non-blocking notifications]
@@ -117,10 +118,24 @@ Following types are supported now.
 '        ShortDate       = 8, : Masked dd/mm/yyyy. Dates are validated upon exit
 '        LongDate        = 16,  : masked using dd/Month/yyyy
 '        DateTime        = 48,  : masked using dd/mm/yyyy hh:mm:ss
+
+and following parameters are accepted: 
+  Except Type, all others are optional
+  
+  InputBoxType Type,    : number
+  string Title,         : Tile for the input box
+  string Message,       : optional text for the input box
+  int PosX,             : x coordinate relative to the screen to positon this box to
+  int PosY,             : y coordinate relative to the screen to position this box to
+  string ThemeBg,       : html colour code
+  string ThemeForeColour: html colour code
+
 ' With the dll in place, use it as
 
   result = gDll.DLL.showinputbox(Type:=32, Title:="", Message:="Tell us what happened on that day!", ThemeBg:="", ThemeForeColour:="")
 ```
+#### check out the getCursorPosition function which returns x,y position of the cursor!
+
 
 in action:
 
@@ -129,6 +144,58 @@ in action:
 as always we can change theme colours:)
 
 ![purple input box](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/InputBoxPurple.png)
+
+Download <a href="https://github.com/krishKM/VBA_TOOLS/tree/master/samples"> sample</a>
+
+
+<hr>
+
+# Drag and drop OpenFileDialog
+WHAT!! Drag and drop function for vba??? Yes you've read it correct but don't get too excited though:) It's just a file-drop function. Allowing users to select/open/get files using drag and drop method. Direct alternative to an existing FileOpenDialog method. 
+<hr>
+  
+### returns a string of JSON Array with all selected files.
+What you do with those file paths is up to you. Maybe at some point later, we might link this with our existing FTP component.
+
+
+Currently following parameters are accepted:
+
+```c#
+  All of below are optional.
+  
+  string Message,         : A message for the dialog box.
+  bool AllowMulti,        : Should it allow multiple files?
+  string[] Filters,       : An array of string => (Description |*.png). Used for file extention filters
+  int PosX,               : X Position relative to the monitor where this box should appear
+  int PosY,               : Y position relative to your monitor where this box should appear
+  string ThemeBg,         : HtmlColourCode
+  string ThemeForeColour  : HtmlColourCode
+```
+(Assuming the Dll part is already done:) Use in VBA like this:
+or just download the sample file and look what functions you would copy to your application.
+
+```
+    Dim FilePaths As String
+    FilePaths = gDll.DLL.ShowDialogForFile("No multiple files allowed", False)
+```
+
+or customised one:
+```VBA
+    Dim Filters(2) As String
+    
+    Filters(0) = "Png Pictures only |*.png"
+    Filters(1) = "All files |*.*"
+    
+    Dim FilePaths As String
+    FilePaths = gDll.DLL.ShowDialogForFile(Message:="Feel free to drop many files", allowmulti:=False, Filters:=Filters, PosX:=0, PosY:=0, ThemeBg:="", ThemeForeColour:="")
+```
+
+View in action:
+![File drag and drop gif](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/FileDropInAction.gif)
+
+Errors
+![File drag and drop error gif](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/FileDropErrorInAction.gif)
+
 
 <hr>
 <hr>
@@ -154,7 +221,7 @@ Uses .NET padleft and padRight function.
 ``` gdll.DLL.PadLeft("1",10,"0") => 0000000001
     ?gdll.DLL.PadRight("1",10,"0") = > 1000000000
 ```     
-
+### check out the getCursorPosition function which returns x,y position of the cursor!
 
 ### [Receive SignalR Messages]
 This works for me because I do have own signalR server but generally is under development or say not ready yet!
@@ -177,6 +244,13 @@ simple tool which uses WinScp to upload files securely to your host. Handy if yo
 many... :) 
 if you want a specific function email or leave a comment :)
 
+# Can't wait? Just download! and enjoy
+<a href="https://github.com/krishKM/VBA_TOOLS/tree/master/samples"> sample</a>
 
+# [Copyrights, Licence, Credits]
 
 Copyright © 2018 Krish
+
+You are free to use the dll for non-commercial purposes only.
+
+Would appreciate your credits and links to my GitHub page.
