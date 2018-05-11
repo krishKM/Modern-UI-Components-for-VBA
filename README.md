@@ -16,6 +16,7 @@ Some basic VBA skills are required! Just download the <a href="https://github.co
   <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#other-futures-that-are-interesting"> Download a file with progressbar</a></li>
   <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#show-cool-inputboxes">Show Cool InputBoxes</a></li>
   <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#drag-and-drop-openfiledialog">Drag and drop OpenFileDialog</a></li>
+  <li><a href="">Load Picture from URL to ImageControl without saving</a></li>
   <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#Other-futures-that-are-interesting">Other futures that are interesting</a></li>
 </ul>
 
@@ -195,6 +196,68 @@ View in action:
 
 Errors
 ![File drag and drop error gif](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/FileDropErrorInAction.gif)
+<hr>
+
+
+
+
+
+
+# Load Picture from URL to ImageControl without saving
+Oh wow! how many people wished this was possible out-of-the-box? Many of us spent good amount of time searching for good tutorials and most the results are simple wayarounds than solutions. Pages after pages of codes with APIs and classes or use web-browser control, buy third-party image control or download the picture and load again.
+
+No offence to the web-browser control. It is great for what it is but surely not designed for showing images(IMHO). Functions like, zooming, streching aren't available via web-browser control. Of course you can use HTML tags but that would be a "way around" to another "way around" problem. isn't it?
+
+Don't want to buy third party controls because they need to be installed! (no-go for many)
+Don't want to download and load either. Too much footprint/mess to clean up with.
+
+Let's meet our simple one liner which can load images into an Image control. No download, no too much code, no nonsense
+
+```VBA
+  'Dll function
+  'PictureFromUrl(
+    string URL,             :  Image url. web url or local path
+    bool ShowError = false, : Show error notification when url cannot be loaded
+    long sender = 0         : Sender HWND, not used now.
+    )
+  
+  'VBA Wrapper (used for simplicity)
+  'ImageControlGetImage(ImagePath as string, optional ShowError=true)
+  
+  
+'Loading web url
+Private Sub Command147_Click()
+    Dim WebPicture As String
+    WebPicture = "https://avatars2.githubusercontent.com/u/1001697?s=460&v=4"
+    
+    Me.Image113.PictureData = gDll.ImageControlGetImage(WebPicture, ShowError:=True)
+End Sub
+
+'Same function used to load local file path
+Private Sub Command149_Click()
+    Dim WebPicture As String
+    WebPicture = "F:\Projects\VBA_DLL\dialogboxgreen.png"
+    
+    Me.Image113.PictureData = gDll.ImageControlGetImage(WebPicture, ShowError:=True)
+    
+End Sub
+
+```
+See it in action:
+![Image from web url](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/ImageControlInAction.gif)
+
+### If you would like to read urls from your table
+instead using the `control source` property, use the `on current` event in your form to load the pictures.
+```VBA
+Private Sub Form_Current()
+  'Load pictures 
+    Me.Image8.PictureData = gDll.ImageControlGetImage([url], True)
+End Sub
+```
+Enjoy and let us know what you think!.
+
+
+
 
 
 <hr>
