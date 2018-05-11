@@ -1,6 +1,9 @@
 # A friendly helper DLL that will makes you smile.
 No installation, no ActiveX, no Admin-Rights. Just add this Dll to your VBA projects and have some cool UI features. Have only tested in MS Access but it should work in all VBA environment. Works with ACCDE too.
 
+## History
+it all started with this question <a href="https://stackoverflow.com/questions/39224308/non-blocking-toast-like-notifications-for-microsoft-access-vba">SO Question</a> 
+
 ## What is does?
 Helps you to make your application more user-friendly by providing some .NET components and functions that you can use within your VBA application. Visually and functionally cooler than VBA!
 
