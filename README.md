@@ -251,6 +251,6 @@ if you want a specific function email or leave a comment :)
 
 Copyright © 2018 Krish
 
-You are free to use the dll for non-commercial purposes only.
+You are free to use the dll for non-commercial purposes. Commercial users, you can use the dll with one condition, please let us know who you are. We are very happy to have your/company name in out clients list.
 
 Would appreciate your credits and links to my GitHub page.
