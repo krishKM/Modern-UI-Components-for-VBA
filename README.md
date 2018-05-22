@@ -96,6 +96,8 @@ Progressbars are crucial element when informing users about a progress. Meet the
   ProgressBarID = gDll.ShowProgressBar(100, "Executing your query", "Please wait. We are preparing printer drivers")
     
   ProgressBarID = gDll.SetProgressBar(ProgressBarID, 10, "Waiting for driver..")
+  
+  gdll.CloseProgressbar ProgressbarId 'Will close the progressbar
 ```
 ![Cool ProgressbarGreen](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/ProgressBar.png)
 
@@ -158,7 +160,7 @@ Download <a href="https://github.com/krishKM/VBA_TOOLS/tree/master/samples"> sam
 WHAT!! Drag and drop function for vba??? Yes you've read it correct but don't get too excited though:) It's just a file-drop function. Allowing users to select/open/get files using drag and drop method. Direct alternative to an existing FileOpenDialog method. 
 <hr>
   
-### returns a string of JSON Array with all selected files.
+### returns a string of JSON Array with all selected files. (if you wish to have string array see below)
 What you do with those file paths is up to you. Maybe at some point later, we might link this with our existing FTP component.
 
 
@@ -192,6 +194,13 @@ or customised one:
     
     Dim FilePaths As String
     FilePaths = gDll.DLL.ShowDialogForFile(Message:="Feel free to drop many files", allowmulti:=False, Filters:=Filters, PosX:=0, PosY:=0, ThemeBg:="", ThemeForeColour:="")
+    
+```
+If you wish to have a string array result
+```
+    dim Files() as string
+    Files = gDll.ShowDialogForFileArray(Message:="Feel free to drop many files", allowmulti:=False, Filters:=Filters, PosX:=0, PosY:=0, ThemeBg:="", ThemeForeColour:="")
+    'Will return a string array of selected files
 ```
 
 View in action:
@@ -269,6 +278,13 @@ Enjoy and let us know what you think!.
 
 # [Other futures that are interesting]
 
+### AreYouSure?
+a simple yes no popup returns true or false. Sometims you just want to confirm the user for yes or no action.
+This might be a silly but cool yes no box:) 
+```VBA
+? gDll.AreYouSure
+
+```
 
 ### Download a file and show progressbar for vba
 Another cool feature. This function allows you to download a file from the internet and shows the download progress using above cool progressbar.
