@@ -1,9 +1,13 @@
-# A friendly helper DLL that will makes you smile.
+# A friendly helper DLL that will make you smile.
 No installation, no ActiveX, no Admin-Rights. Just add this Dll to your VBA projects and have some cool UI features. Have only tested in MS Access but it should work in all VBA environment. Works with ACCDE too.
 
 ```diff
 + NOTE:
 this is an evolving project. Function names from one version to another might varry, please test your wrappers before updating to the newest one.
+
++ Simple ShowDialog can be colour themed
++ Import data to a table using JsonImport
++ AreYouSure can be colour themed
 ``` 
 
 
@@ -97,7 +101,9 @@ There is vba wrapper in the sample accdb which can be extended as per your need.
 ```
 
 # Show cool Progressbar
-Progressbars are crucial element when informing users about a progress. Meet the cool progressbar which can pop up on top of your application at any time with a simple code as such as.
+Progressbars 
+
+crucial element when informing users about a progress. Meet the cool progressbar which can pop up on top of your application at any time with a simple code as such as.
 
 ```
   Dim ProgressBarID As Long
@@ -293,6 +299,12 @@ This might be a silly but cool yes no box:)
 ? gDll.AreYouSure
 
 ```
+It is also possible to colour theme the AreYouSureBox by providing Hex Colour code or if you are using bootstrap class
+```VBA
+? gDll.AreYouSureE(Me, "#aa66cc", "#000000", "#aa66cc", "#F65656") or 
+?gDll.AreYouSureE(, gBootstrap.default_color_dark, gBootstrap.WHITE, gBootstrap.AMBER, gBootstrap.TEAL_LIGHTEN_3)
+```
+![AreYouSureCollection](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/AreYouSureCollection.png)
 
 ### Download a file and show progressbar for vba
 Another cool feature. This function allows you to download a file from the internet and shows the download progress using above cool progressbar.
@@ -325,10 +337,28 @@ ByteToImage(byte[] byteArraym string TemporaryPath, bool useCache) is a function
 Will return the path of the image file. Use the path as image location for your image property.
 something like Me.Image32.Picture = gDll.ByteToImage(ByteArray, "SaveLocationPath")
 
-### FTPS_UPLOAD
+### FTP(S) UPLOAD
 simple tool which uses WinScp to upload files securely to your host. Handy if you want to upload some files without doing too much VBA or having activeX components.
 
+### FTP Delete Remote File
+Simply delete a file from your remote server. Returns true or false + error message as string.
+```VBA
+  'Server as string
+  'Port as number
+  'Username as string
+  'Password as string
+  'RemoteFile as string
+  'SSHFingerprint as string
+? DLL.FTPDeleteFile(ServerName, Port, Username, Password, RemoteFile, TLSHostFingerprint)
+```
 
+### ImportJSON
+Similar to Application.ImportXML, you can create table from JSON strings. I haven't done extensive test but works for my needs.
+Simply call
+```VBA
+gdll.ImportJSON(YourJSonString, "Target Table name", ImportOptions[append,structureOnly,structureAndData], recreate)
+ Recreate will delete and recreate the table. If ApendOnly requested, recreate is ineffective
+```
 
 # [Upcoming functions]
 many... :) 
