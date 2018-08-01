@@ -31,11 +31,11 @@ Some basic VBA skills are required! Just download the <a href="https://github.co
   <li>Show non-blocking notifications</li>
   <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#show-cool-dialogbox"> Show Cool DialogBox</a></li>
   <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#show-cool-progressbar"> Show Cool Progressbar</a></li>
-  <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#other-futures-that-are-interesting"> Download a file with progressbar</a></li>
+  <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#other-Features-that-are-interesting"> Download a file with progressbar</a></li>
   <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#show-cool-inputboxes">Show Cool InputBoxes</a></li>
   <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#drag-and-drop-openfiledialog">Drag and drop OpenFileDialog</a></li>
   <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#load-picture-from-url-to-imagecontrol-without-saving">Load Picture from URL to ImageControl without saving</a></li>
-  <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#Other-futures-that-are-interesting">Other futures that are interesting</a></li>
+  <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#Other-Features-that-are-interesting">Other Features that are interesting</a></li>
 </ul>
 
 ### [Show non-blocking notifications]
@@ -293,7 +293,7 @@ Enjoy and let us know what you think!.
 <hr>
 
 
-# [Other futures that are interesting]
+# [Other Features that are interesting]
 
 ### AreYouSure?
 a simple yes no popup returns true or false. Sometims you just want to confirm the user for yes or no action.
