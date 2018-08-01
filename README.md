@@ -2,12 +2,15 @@
 No installation, no ActiveX, no Admin-Rights. Just add this Dll to your VBA projects and have some cool UI features. Have only tested in MS Access but it should work in all VBA environment. Works with ACCDE too.
 
 ```diff
-+ NOTE:
-this is an evolving project. Function names from one version to another might varry, please test your wrappers before updating to the newest one.
+- NOTE:
+- this is an evolving project. Function names from one version to another might varry, please test your wrappers before updating to the newest one.
+
+- If you have any new suggestions, please feel free to let me know.
 
 + Simple ShowDialog can be colour themed
 + Import data to a table using JsonImport
 + AreYouSure can be colour themed
++ JsonImport and ExportToJson added.
 ``` 
 
 
@@ -353,12 +356,38 @@ Simply delete a file from your remote server. Returns true or false + error mess
 ```
 
 ### ImportJSON
-Similar to Application.ImportXML, you can create table from JSON strings. I haven't done extensive test but works for my needs.
+Somewhere similar to Application.ImportXML, you can create access tables from JSON array strings.
+I haven't done extensive test but works for my needs.
+
 Simply call
 ```VBA
-gdll.ImportJSON(YourJSonString, "Target Table name", ImportOptions[append,structureOnly,structureAndData], recreate)
- Recreate will delete and recreate the table. If ApendOnly requested, recreate is ineffective
+  gdll.ImportJSON(YourJSonArrayString, "Target Table name", ImportOptions[append,structureOnly,structureAndData], recreate)
+ 'Recreate will delete and recreate the table. If ApendOnly requested, recreate is ineffective
+ 
+ 'Here is a sample working command. Which will create a new table called tblJsonTest and import all the content from the array.
+ gdll.ImportJson("[{""id"":10,""name"":""User"",""add"":false,""edit"":true,""authorize"":true,""view"":true},    {""id"":11,""name"":""Group"",""add"":true,""edit"":false,""authorize"":false,""view"":true},    {""id"":12,""name"":""Permission"",""add"":true,""edit"":true,""authorize"":true,""view"":true}]","tblJsonTest",acStructureAndData,True)
+  '
 ```
+
+### ExportToJson
+It is now possible to export table contents as JSON string. 
+Method1:
+```VBA
+  'Eecute the SQL SELECT command and saves the result set as JSON formatted string.
+  gdll.ExportToJSON("select * from tbljsontest where authorize = true;","MyJson.Txt",overwrite:=false,isRawSql:=true)
+```
+
+Method2:
+```VBA
+  'Export everything from the table/query
+  gdll.ExportToJSON("tbljsontest ",SaveAs:= "MyJson.Txt",overwrite:=false,isRawSql:=false)
+```
+In this method, we have passed a table name/query name to the export function and set isRawSql = false. The export function will then generate SQL statement similar to “SELECT * FROM givenTableName/QueryName;” and perform the JSON Export.
+
+If the SaveAs (target file name) is empty, no file will be exported but the conversion will still happen and converted string will be returned as result.
+
+Download the sample project and have a play.
+
 
 # [Upcoming functions]
 many... :) 
