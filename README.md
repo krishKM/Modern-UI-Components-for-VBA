@@ -1,5 +1,6 @@
 # A friendly helper DLL that will make you smile.
-No installation, no ActiveX, no Admin-Rights. Just add this Dll to your VBA projects and have some cool UI features. Have only tested in MS Access but it should work in all VBA environment. Works with ACCDE too.
+**No installation**, **no ActiveX**, **no Admin-Rights.** 
+Just add this Dll to your VBA project folder and have some cool UI features. Have only tested in MS Access but it should work in all VBA environment. Works with ACCDE too.
 
 ```diff
 - NOTE:
