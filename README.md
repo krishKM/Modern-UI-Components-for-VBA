@@ -11,6 +11,12 @@ No installation, no ActiveX, no Admin-Rights. Just add this Dll to your VBA proj
 + Import data to a table using JsonImport
 + AreYouSure can be colour themed
 + JsonImport and ExportToJson added.
+
+```
+
+# upcoming
+```diff
++ Barcode control: Generate barcode from your strings in forms, reports. Works are nearly finished. Need to make it userfriendly
 ``` 
 
 
