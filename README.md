@@ -2,6 +2,8 @@
 **No installation**, **no ActiveX**, **no Admin-Rights.** 
 Just add this Dll to your VBA project folder and have some cool UI features. Have only tested in MS Access but it should work in all VBA environment. Works with ACCDE too.
 
+The main goal is to bring some .NET function to your VBA project to make your project stand-out visually and functionally.
+
 ```diff
 - NOTE:
 - this is an evolving project. Function names from one version to another might varry, please test your wrappers before updating to the newest one.
