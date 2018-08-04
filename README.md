@@ -3,6 +3,7 @@
 Just add this Dll to your VBA project folder and have some cool UI features. Have only tested in MS Access but it should work in all VBA environment. Works with ACCDE too.
 
 The main goal is to bring some .NET function to your VBA project to make your project stand-out visually and functionally.
+Of course with minimal code!
 
 ```diff
 - NOTE:
