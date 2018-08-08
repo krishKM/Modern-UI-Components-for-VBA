@@ -1,5 +1,9 @@
 # A friendly helper DLL that will make you smile.
-No installation, no ActiveX, no Admin-Rights. Just add this Dll to your VBA projects and have some cool UI features. Have only tested in MS Access but it should work in all VBA environment. Works with ACCDE too.
+**No installation**, **no ActiveX**, **no Admin-Rights.** 
+Just add this Dll to your VBA project folder and have some cool UI features. Have only tested in MS Access but it should work in all VBA environment. Works with ACCDE too.
+
+The main goal is to bring some .NET function to your VBA project to make your project stand-out visually and functionally.
+Of course with minimal code!
 
 ```diff
 - NOTE:
@@ -11,6 +15,12 @@ No installation, no ActiveX, no Admin-Rights. Just add this Dll to your VBA proj
 + Import data to a table using JsonImport
 + AreYouSure can be colour themed
 + JsonImport and ExportToJson added.
+
+```
+
+# upcoming
+```diff
++ Barcode control: Generate barcode from your strings in forms, reports. Works are nearly finished. Need to make it userfriendly
 ``` 
 
 
