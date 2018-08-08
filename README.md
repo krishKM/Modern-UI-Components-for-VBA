@@ -2,8 +2,10 @@
 **No installation**, **no ActiveX**, **no Admin-Rights.** 
 Just add this Dll to your VBA project folder and have some cool UI features. Have only tested in MS Access but it should work in all VBA environment. Works with ACCDE too.
 
-The main goal is to bring some .NET function to your VBA project to make your project stand-out visually and functionally.
-Of course with minimal code!
+The main goal is to bring some .NET function to your VBA project. Make your project stand-out visually and functionally!
+Since this plugin does not require admin rights nor installation, you can distribute your app without having to worry about your client's admin policy.
+
+And of course with minimal code!
 
 ```diff
 - NOTE:
@@ -15,13 +17,21 @@ Of course with minimal code!
 + Import data to a table using JsonImport
 + AreYouSure can be colour themed
 + JsonImport and ExportToJson added.
-
 ```
 
-# upcoming
+# beta
 ```diff
 + Barcode control: Generate barcode from your strings in forms, reports. Works are nearly finished. Need to make it userfriendly
++ DropDown box added
 ``` 
+
+# Be safe
+Use following sites to check for any malware for any fiels you download from online.
+https://virusdesk.kaspersky.com/
+https://www.virustotal.com/
+
+![OnlineScanner](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/vbatoolsIsSafe.png)
+
 
 
 
@@ -38,13 +48,15 @@ Some basic VBA skills are required! Just download the <a href="https://github.co
 
 # Interesting features
 <ul>
-  <li>Show non-blocking notifications</li>
+  <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#show-non-blocking-notifications">Show non-blocking notifications</a></li>
   <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#show-cool-dialogbox"> Show Cool DialogBox</a></li>
   <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#show-cool-progressbar"> Show Cool Progressbar</a></li>
   <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#other-Features-that-are-interesting"> Download a file with progressbar</a></li>
   <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#show-cool-inputboxes">Show Cool InputBoxes</a></li>
   <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#drag-and-drop-openfiledialog">Drag and drop OpenFileDialog</a></li>
   <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#load-picture-from-url-to-imagecontrol-without-saving">Load Picture from URL to ImageControl without saving</a></li>
+  <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#show-dropdown-box">Show DropDown box</a></li>
+  <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#barcode-control">Barcode Control</a></li>
   <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#Other-Features-that-are-interesting">Other Features that are interesting</a></li>
 </ul>
 
@@ -180,6 +192,49 @@ as always we can change theme colours:)
 
 Download <a href="https://github.com/krishKM/VBA_TOOLS/tree/master/samples"> sample</a>
 
+# [Show DropDown Box]
+Requested from a VBA_TOOLS user. Like other user inputboxes, you can now let your user to select from a cool dropdown box.
+![purple input box](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/DropDownBox.png)
+
+When we decided to make a cool dropdown box, we thought about reasons for not using existing Ms Access DropDown box.
+I personally think, showing icons in a dropdown box would be an amazing idea! :) In addition, standard DropDownBox does not allow one to search partially within the content. That is, being able to search any part of the dropdown selection.
+Like traditional DropDown, we want to show a list of existing query or table.
+So we decided to cover those points at the moment. Surely, going forward we are planing to add following functions.
+
+1. Grouped entries: DropDown entries will be grouped with a group header.
+2. Having multiple image column?
+3. Change the DropDown style completely: Maybe like a menu with sub menus..
+4. Fix any errors
+
+
+Here is how to use it:
+```VBA
+ ?gDll.ShowDropDown("Select an item", "Some inner message?", "qryDropDown", 2, Array(50, 50))
+ 
+ 
+ Param list:
+ /// <summary>
+  /// Shows a Dialogbox with a dropdown for selection. Returns a string value
+  /// </summary>
+  /// <param name="title">Title for the inputbox</param>
+  /// <param name="message">Inner message for the input box</param>
+  /// <param name="dbSource">Database path</param>
+  /// <param name="tableSource">Table name or SQL. If SQL is used, use isRawSql=true</param>
+  /// <param name="boundColumn">Column Index to get the value from</param>
+  /// <param name="columnWidths">an Array of integers</param>
+  /// <param name="isRawSql">Specifies whether the tablesource is a plain SQL command </param>
+  /// <param name="posX"></param>
+  /// <param name="posY"></param>
+  /// <param name="themeColour"></param>
+  /// <param name="themeForeColour"></param>
+  /// <returns>String value</returns>
+```
+
+
+### Note:
+If your datasource contains "icon" as the first column and it is a hyperlink (web or local file), by default those links will be converted to image.
+Usse Array(column0_width, column1_width ...) to set up the column widths
+
 
 <hr>
 
@@ -296,11 +351,40 @@ End Sub
 Enjoy and let us know what you think!.
 
 
+# [Barcode Control]
+Another request from Vba_tools user to be able to show barcodes. I have no idea about barcodes but found a great source in google (https://sourceforge.net/projects/zintnet/). Thanks for the zintnet owner.
+I've adapted few classes and added to our VBA_TOOLS plugin.
+
+Unlike other components barcode-control will be embedded into forms and reports so the control cannot be a standalone form so when printing reports or invoices the barcode is visible. To achieve this, we create a barcode in .NET environment and pass the barcode back to Access as an Image. This way an Image control on a form or report can show barcodes.
+
+Again this is beta version. Have a look and inform us about your thoughts.
+
+How to use it?
+
+```VBA
+  Me.imgBarcode.PictureData = gDll.CreateBarcode(Val(Me.BrcodeType.value), Me.txtBarcodeData.value, Val(BarcodeSizeMultiplier.value))
+  
+  Parameter list:
+  '    /// <summary>
+'    ///
+'    /// </summary>
+'    /// <param name="symbology">Type of the barcode</param>
+'    /// <param name="barcodeData">Data value for barcode</param>
+'    /// <param name="width">Width of the graphics / Image</param>
+'    /// <param name="height">height of the grapics/ Image</param>
+'    /// <param name="multiplier">Multiply the size by this value.</param>
+'    /// <returns>Picture Data</returns>
+'    CreateBarcode(Symbology symbology, string barcodeData, int width, int height, float multiplier )
+
+```
+![qrBarcode.png](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/qrBarcode.png)
+![Code39Barcode.ong](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/Code39.png)
 
 
 
 <hr>
 <hr>
+
 
 
 # [Other Features that are interesting]
