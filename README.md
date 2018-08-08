@@ -378,7 +378,7 @@ How to use it?
 
 ```
 ![qrBarcode.png](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/qrBarcode.png)
-![Code39Barcode.ong](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/Code39.png)
+![Code39Barcode.png](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/Code39.png)
 
 
 
