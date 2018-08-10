@@ -13,20 +13,20 @@ And of course with minimal code!
 
 - If you have any new suggestions, please feel free to let me know.
 
-+ Simple ShowDialog can be colour themed
-+ Import data to a table using JsonImport
-+ AreYouSure can be colour themed
-+ JsonImport and ExportToJson added.
++ DragMe function added any borderless access form can be dragged with a single mouse click.
++ 
 ```
 
 # beta
 ```diff
 + Barcode control: Generate barcode from your strings in forms, reports. Works are nearly finished. Need to make it userfriendly
 + DropDown box added
++ Simple and Extended context Menu needs your help to test
+
 ``` 
 
 # Be safe
-Use following sites to check for any malware for any fiels you download from online.
+Use following sites to check for any malware for any files you download from online.
 https://virusdesk.kaspersky.com/
 https://www.virustotal.com/
 
@@ -48,16 +48,74 @@ Some basic VBA skills are required! Just download the <a href="https://github.co
 
 # Interesting features
 <ul>
-  <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#show-non-blocking-notifications">Show non-blocking notifications</a></li>
-  <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#show-cool-dialogbox"> Show Cool DialogBox</a></li>
+  <li>
+    <a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#show-non-blocking-notifications">Show non-blocking notifications</a>
+  </li>
+  <li>
+    <a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#show-cool-dialogbox">Show Cool DialogBox</a>
+    <ul>
+      <li>
+        <a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#cool-simple-messageBox">Cool Simple MessageBox</a>
+      </li>
+      <li>
+        <a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#areyousure">Are you sure?</a> A simple yes no dialog box.
+      </li>
+    </ul>
+  </li>
   <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#show-cool-progressbar"> Show Cool Progressbar</a></li>
-  <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#other-Features-that-are-interesting"> Download a file with progressbar</a></li>
-  <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#show-cool-inputboxes">Show Cool InputBoxes</a></li>
-  <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#drag-and-drop-openfiledialog">Drag and drop OpenFileDialog</a></li>
-  <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#load-picture-from-url-to-imagecontrol-without-saving">Load Picture from URL to ImageControl without saving</a></li>
-  <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#show-dropdown-box">Show DropDown box</a></li>
-  <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#barcode-control">Barcode Control</a></li>
-  <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#Other-Features-that-are-interesting">Other Features that are interesting</a></li>
+  <li>
+  	<a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#other-Features-that-are-interesting"> Download a file with progressbar</a>
+	<ul>
+		<li>Download a file to local location	</li>
+	</ul>
+  </li>
+  
+  <li>
+  		<a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#show-cool-inputboxes">Show Cool InputBoxes</a>
+		<ul>
+			<li>Email with validation</li>
+			<li>Password</li>
+			<li>Multiline / single line</li>
+			<li>Number only</li>
+			<li>Dates with validation</li>
+			<li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#show-dropdown-box">Show DropDown box</a></li>
+		</ul>
+  </li>
+  <li>
+  	<a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#drag-and-drop-openfiledialog">Drag and drop OpenFileDialog</a>
+	<ul>
+			<li>A simple open file dialog box that supports drag and drop function</li>
+		</ul>
+  </li>
+  <li>
+  	<a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#load-picture-from-url-to-imagecontrol-without-saving">Load Picture from URL to ImageControl without saving</a>
+	<ul>
+			<li>Load web urls</li>
+			<li>Load local pictures</li>
+			<li>Convert blob fields to pictures</li>
+		</ul>
+  </li>
+  <li>
+  	<a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#barcode-control-for-vba">Barcode Control</a>
+	<ul>
+		<li>Currently supports Code39, Code128, QrCode</li>
+		<li>Currently under testing</li>
+	</ul>
+  </li>
+  <li>
+  	<a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#Other-Features-that-are-interesting">Other Features that are interesting</a>
+	<ul>
+		<li>GetCursorPosition: Returns cursor screen position</li>
+		<li>Save Clipboard images to local file: Saves image from clipboard to any local storage you provide</li>
+		<li>PadLeft and PadRight: Uses .NET string padding left and right</li>
+		<li>ByteToImage: Converts byte array to Picture</li>
+		<li>FTP(S) UPLOAD: Upload files to your ftp server securely</li>
+		<li>FTP Delete Remote File: Deletes a file from remote server</li>
+		<li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#exporttojson">ExportToJson</a>Allows MS Access users you to export queries, tables SQL results as JSON string </li>
+		<li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#ImportJSON">ImportJSON</a>Allows MS Access users to import records to table using JSON string arrays</li>
+		<li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#cool-context-menu-for-vba">Cool Context Menu</a>Simple context menu for quick selection.</li>
+	</ul>
+  </li>
 </ul>
 
 ### [Show non-blocking notifications]
@@ -124,6 +182,16 @@ There is vba wrapper in the sample accdb which can be extended as per your need.
   'usign the wrapper it would be as simple as 
   Debug.Print gDll.DialogRich("This is a title", "Some content", (vbExclamation + vbYesNo))
 ```
+
+a simplified version is also avilable (without HTML rendering)
+# Cool Simple MessageBox
+![Cool DialogBox](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/CoolSimpleMessageBox.png)
+
+Allows one to show simple message box
+
+
+
+
 
 # Show cool Progressbar
 Progressbars 
@@ -351,7 +419,7 @@ End Sub
 Enjoy and let us know what you think!.
 
 
-# [Barcode Control]
+# Barcode Control for vba
 Another request from Vba_tools user to be able to show barcodes. I have no idea about barcodes but found a great source in google (https://sourceforge.net/projects/zintnet/). Thanks for the zintnet owner.
 I've adapted few classes and added to our VBA_TOOLS plugin.
 
@@ -380,6 +448,57 @@ How to use it?
 ![qrBarcode.png](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/qrBarcode.png)
 ![Code39Barcode.png](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/Code39barcode.png)
 
+# Cool Context Menu for vba
+[Under testing]: testers needed. This function is currently not wrapped. Means more parameters will be added once ready for publish
+
+What can I say? Probably most vba users wished this control existed out of the box. Similar to right click context menu, we developed a left mouse clickable context menu.
+Of course styleable, moveable and iconed menu items.
+
+Enough said. lets see in action.
+![ContextMenuPicture](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/CoolContextMenu.gif)
+
+Since we've got your attention now, let's see how this control works. There are two version
+1>Simple: Just takes an array of strings as menu items and returns the menu item text as the selected value.
+2> Extended: Extended menu can show icons as well as take a dataValue for each menu item. That being said, each menu item is constructed as an array(string:IconPath, string:DataReturnValue, string:MenuItem) ie. array("c:\email.png","1","Send Email")
+add each menu entry within another array to use the extended menu. i.e. Array(array("c:\email.png","1","Send Email"), array("c:\door.png","2","Exit"), array("http://someweblink.png","3","Some menu item with web icon") )
+
+in code that would be:
+```VBA
+	'Simple Menu
+	'Create an array of menu items
+    Dim MenuItems() As String
+	Dim result As String
+
+    MenuItems = VBA.Split("Do Something,I'm so cool, Send Email, Print, Settings, Save, Save As, Make Pdf", ",")
+    FnArrayAddItem MenuItems, "Exit"
+    FnArrayAddItem MenuItems, "Exit Application"
+    
+    result = gDll.DLL.ShowContextMenu(MenuItems)
+	gDll.Toast result, , , Me.hwnd
+    If (result = "Exit") Then
+        DoCmd.Close acForm, Me.Name, acSaveYes
+    ElseIf (result = "Exit Application") Then
+        Application.Quit
+    End If
+	
+```
+
+```VBA
+	'Extended menu with icons
+	Dim result As String
+    result = (gDll.DLL.ShowContextMenuA(Array(Array("", "0", "Web loading takes time"), Array("F:\PROJECT_SUPPORT\Images\csharp.png", "1", ".NET is cool"), Array("https://static.thinkster.io/topics/node_icon.png", "2", "Loading icon from web"), Array("glyphicons-389-exit", "3", "Exit"))))
+    
+    
+    gDll.Toast result, vbInformation
+    
+    If (Val(result)) = 3 Then
+        DoCmd.Close acForm, Me.Name, acSaveYes
+		
+```
+
+
+
+
 
 
 <hr>
@@ -387,7 +506,7 @@ How to use it?
 
 
 
-# [Other Features that are interesting]
+# Other Features that are interesting
 
 ### AreYouSure?
 a simple yes no popup returns true or false. Sometims you just want to confirm the user for yes or no action.
@@ -509,265 +628,265 @@ Would appreciate your credits and links to my GitHub page.
 <hr>
 
 ```C#
-/// <summary>
-/// Shows toasts on the desktop
-/// </summary>
-public async void FN_SHOW_TOAST(string iMessage, int iDuration, string iBG_COLOR, long iANIME_DURATION, string iFONT_COLOR, int iX, int iY, int iANIM_DIRECTION, bool iAUTO_CLOSE = true)
+/// <summary>
+/// Shows toasts on the desktop
+/// </summary>
+public async void FN_SHOW_TOAST(string iMessage, int iDuration, string iBG_COLOR, long iANIME_DURATION, string iFONT_COLOR, int iX, int iY, int iANIM_DIRECTION, bool iAUTO_CLOSE = true)
 {
 }
  
  
 
-/// <summary>
-/// Converts ByteArray to an Image and saves in a provided location.
-/// </summary>
-/// <returns>The path of the image saved locally</returns>
-public string ByteToImage(byte[] byteArrayIn, string iTempPath, bool useCache)
+/// <summary>
+/// Converts ByteArray to an Image and saves in a provided location.
+/// </summary>
+/// <returns>The path of the image saved locally</returns>
+public string ByteToImage(byte[] byteArrayIn, string iTempPath, bool useCache)
 {
 }
  
-/// <summary>
-/// Converts Byte Array to a bitmap
-/// </summary>
-public Bitmap ByteToBitmap(byte[] byteArr)
+/// <summary>
+/// Converts Byte Array to a bitmap
+/// </summary>
+public Bitmap ByteToBitmap(byte[] byteArr)
 {
 }
  
-/// <summary>
-/// Returns a ByteArray of the image
-/// </summary>
-/// <param name="hWND"></param>
-public byte[] TakeScreenShotFromHwnd(long hWND)
+/// <summary>
+/// Returns a ByteArray of the image
+/// </summary>
+/// <param name="hWND"></param>
+public byte[] TakeScreenShotFromHwnd(long hWND)
 {
 }
  
-/// <summary>
-/// Take screen-shot of entire desktop. Returns byteArray
-/// </summary>
-public byte[] TakeScreenShot()
+/// <summary>
+/// Take screen-shot of entire desktop. Returns byteArray
+/// </summary>
+public byte[] TakeScreenShot()
 {
 }
  
-/// <summary>
-/// Take screen-shot of entire desktop. Saves in a location and returns the location
-/// </summary>
-public string TakeScreenShot1(string SavePath)
+/// <summary>
+/// Take screen-shot of entire desktop. Saves in a location and returns the location
+/// </summary>
+public string TakeScreenShot1(string SavePath)
 {
 }
  
-/// <summary>
-/// Returns ByteArray containing the picture received from the url
-/// </summary>
-/// <param name="URL"></param>
-public byte[] PictureFromUrl(string URL, bool ShowError = false, long sender = 0)
+/// <summary>
+/// Returns ByteArray containing the picture received from the url
+/// </summary>
+/// <param name="URL"></param>
+public byte[] PictureFromUrl(string URL, bool ShowError = false, long sender = 0)
 {
 }
-/// <summary>
-/// uses winScp. securely uploads files to the given host
-/// </summary>
-public string FTPS_UPLOAD(string iHost, int iPort, string iUsername, string iPassword, string iLocalFileName, string iRemoteLocation, string iHostCertificateFingerprint = "")
-{
-}
- 
-/// <summary>
-/// Returns a formated string using C# string.format()
-/// </summary>
-public string FN_STRING_FORMAT(string iString, params object[] iParams)
+/// <summary>
+/// uses winScp. securely uploads files to the given host
+/// </summary>
+public string FTPS_UPLOAD(string iHost, int iPort, string iUsername, string iPassword, string iLocalFileName, string iRemoteLocation, string iHostCertificateFingerprint = "")
 {
 }
  
- 
-public string FN_SERIALIZE(dynamic iObject)
+/// <summary>
+/// Returns a formated string using C# string.format()
+/// </summary>
+public string FN_STRING_FORMAT(string iString, params object[] iParams)
 {
 }
  
-/// <summary>
-/// Returns Cursor position Relative to the screen
-/// </summary>
-public string getCursorPosition()
+ 
+public string FN_SERIALIZE(dynamic iObject)
 {
 }
  
-/// <summary>
-/// Shows a dialog-form for parent window.. non customizable
-/// </summary>
-/// <param name="iHWND"></param>
-public int AreYouSure(int iHWND)
+/// <summary>
+/// Returns Cursor position Relative to the screen
+/// </summary>
+public string getCursorPosition()
 {
 }
  
-/// <summary>
-/// Shows confirm dialog, customizable
-/// </summary>
-public int ShowDialog(string caption, string message, string buttonTextForYes, string buttonTextForNo)
+/// <summary>
+/// Shows a dialog-form for parent window.. non customizable
+/// </summary>
+/// <param name="iHWND"></param>
+public int AreYouSure(int iHWND)
 {
 }
  
-/// <summary>
-/// Shows confirm dialog, customizable
-/// </summary>
-public int ShowDialogRich(string caption, string message, string buttonTextForYes, string buttonTextForNo)
+/// <summary>
+/// Shows confirm dialog, customizable
+/// </summary>
+public int ShowDialog(string caption, string message, string buttonTextForYes, string buttonTextForNo)
 {
 }
  
-/// <summary>
-/// Shows rich dialog form using JSON configuration
-/// </summary>
-public int ShowDialogJSON(string JSONConfig)
+/// <summary>
+/// Shows confirm dialog, customizable
+/// </summary>
+public int ShowDialogRich(string caption, string message, string buttonTextForYes, string buttonTextForNo)
 {
 }
  
-/// <summary>
-/// Shows Input-box form
-/// </summary>
-public string ShowInputBox(InputBoxType Type = InputBoxType.Text, string Title = "", string Message = "", int PosX=0, int PosY=0, string ThemeBg = "", string ThemeForeColour = "")
+/// <summary>
+/// Shows rich dialog form using JSON configuration
+/// </summary>
+public int ShowDialogJSON(string JSONConfig)
 {
 }
  
-/// <summary>
-/// Shows progressbar
-/// </summary>
-public long OpenProgressBar(string Title, string Message, int Total, bool AutoClose, string ThemeBg, string TitleForeColour)
+/// <summary>
+/// Shows Input-box form
+/// </summary>
+public string ShowInputBox(InputBoxType Type = InputBoxType.Text, string Title = "", string Message = "", int PosX=0, int PosY=0, string ThemeBg = "", string ThemeForeColour = "")
 {
 }
  
-/// <summary>
-/// Sets value for an existing progressbar or show error
-/// </summary>
-public long SetProgressBar(long Handle, int CurrentValue, string Message, int NewMaxValue, bool AutoClose = false)
+/// <summary>
+/// Shows progressbar
+/// </summary>
+public long OpenProgressBar(string Title, string Message, int Total, bool AutoClose, string ThemeBg, string TitleForeColour)
 {
 }
  
-/// <summary>
-/// Closes an already open progressbar.
-/// </summary>
-/// <param name="Handle"></param>
-public void CloseProgressBar(long Handle)
+/// <summary>
+/// Sets value for an existing progressbar or show error
+/// </summary>
+public long SetProgressBar(long Handle, int CurrentValue, string Message, int NewMaxValue, bool AutoClose = false)
 {
 }
  
-/// <summary>
-/// If clipboard contains an Image, save in temp location and return the file path
-/// </summary>
-public string SaveClipboardToImage(string path, string FileName, string ImageType)
+/// <summary>
+/// Closes an already open progressbar.
+/// </summary>
+/// <param name="Handle"></param>
+public void CloseProgressBar(long Handle)
 {
 }
  
-/// <summary>
-/// Download a file from web and save it to local path. Returns saved file path
-/// </summary>
-public string DownloadAFile(string url, string destination, bool overWrite, bool ShowProgress)
+/// <summary>
+/// If clipboard contains an Image, save in temp location and return the file path
+/// </summary>
+public string SaveClipboardToImage(string path, string FileName, string ImageType)
+{
+}
+ 
+/// <summary>
+/// Download a file from web and save it to local path. Returns saved file path
+/// </summary>
+public string DownloadAFile(string url, string destination, bool overWrite, bool ShowProgress)
 {
 }
  
  
 
-public string PadLeft(string Input, int Length, string PaddingChar="")
+public string PadLeft(string Input, int Length, string PaddingChar="")
 {
 }
 
-public string PadRight(string Input, int Length, string PaddingChar="")
+public string PadRight(string Input, int Length, string PaddingChar="")
 {
 }
  
  
-/// <summary>
-/// De-Serializes a JSON string to a dynamic type. Returns the dynamic object
-/// </summary>
-public object JSONToObject(string json)
+/// <summary>
+/// De-Serializes a JSON string to a dynamic type. Returns the dynamic object
+/// </summary>
+public object JSONToObject(string json)
 {
 }
  
-/// <summary>
-/// Reads a property from JSON dynamic object and returns the property value.
-/// </summary>
-public string JSONGetValue(object iObject, string propertyName)
+/// <summary>
+/// Reads a property from JSON dynamic object and returns the property value.
+/// </summary>
+public string JSONGetValue(object iObject, string propertyName)
 {
 }
  
-/// <summary>
-/// Extracts a JSON property from given JSON object and returns the value as JSON object.
-/// </summary>
-public object JSONGetObject(object jsonParsedObject, string propertyName)
+/// <summary>
+/// Extracts a JSON property from given JSON object and returns the value as JSON object.
+/// </summary>
+public object JSONGetObject(object jsonParsedObject, string propertyName)
 {
 }
  
-/// <summary>
-/// Show modal modern UI calendar for vBA users
-/// </summary>
-/// <returns></returns>
-public DateTime ShowCalendar()
+/// <summary>
+/// Show modal modern UI calendar for vBA users
+/// </summary>
+/// <returns></returns>
+public DateTime ShowCalendar()
 {
 }
  
-/// <summary>
-/// Shows custom open file dialog. Allows drag and drop too.
-/// </summary>
-/// <returns>Json formatted string</returns>
-public string ShowDialogForFile(string Message = "", bool AllowMulti = true, string[] Filters = null, int PosX =0, int PosY =0, string ThemeBg="", string ThemeForeColour="", bool closeAfterFileDrop = true)
+/// <summary>
+/// Shows custom open file dialog. Allows drag and drop too.
+/// </summary>
+/// <returns>Json formatted string</returns>
+public string ShowDialogForFile(string Message = "", bool AllowMulti = true, string[] Filters = null, int PosX =0, int PosY =0, string ThemeBg="", string ThemeForeColour="", bool closeAfterFileDrop = true)
 {
 }
  
-/// <summary>
-/// Shows custom open file dialog. Allows drag and drop too.
-/// </summary>
-/// <returns>String[] array</returns>
-public string[] ShowDialogForFileArray(string Message = "", bool AllowMulti = true, string[] Filters = null, int PosX = 0, int PosY = 0, string ThemeBg = "", string ThemeForeColour = "", bool closeAfterFileDrop = true)
+/// <summary>
+/// Shows custom open file dialog. Allows drag and drop too.
+/// </summary>
+/// <returns>String[] array</returns>
+public string[] ShowDialogForFileArray(string Message = "", bool AllowMulti = true, string[] Filters = null, int PosX = 0, int PosY = 0, string ThemeBg = "", string ThemeForeColour = "", bool closeAfterFileDrop = true)
 {
 }
  
-/// <summary>
-/// Converts HTML color to access color code
-/// </summary>
-public int ColorHexToAccess(string HTMLColor)
+/// <summary>
+/// Converts HTML color to access color code
+/// </summary>
+public int ColorHexToAccess(string HTMLColor)
 {
 }
  
-/// <summary>
-/// Converts MS ACCESS color to HTML colour code
-/// </summary>
-public string ColorAccessToHex(long AccessColor)
+/// <summary>
+/// Converts MS ACCESS color to HTML colour code
+/// </summary>
+public string ColorAccessToHex(long AccessColor)
 {
 }
  
  
-/// <summary>
-/// Returns true or false whether the url is reachable
-/// </summary>
-public bool UrlIsReachable(string url)
+/// <summary>
+/// Returns true or false whether the url is reachable
+/// </summary>
+public bool UrlIsReachable(string url)
 {
 }
  
-/// <summary>
-/// Returns true or false whether the url is well formatted
-/// </summary>
-public bool UrlIsValid(string url)
+/// <summary>
+/// Returns true or false whether the url is well formatted
+/// </summary>
+public bool UrlIsValid(string url)
 {
 }
-/// <summary>
-/// Is the given url a local file path?
-/// </summary>
-public bool UrlIsLocalPath(string p)
-{
-}
- 
-/// <summary>
-/// Is the given url a local file path?
-/// </summary>
-public bool UriIsLocalPath(string p)
+/// <summary>
+/// Is the given url a local file path?
+/// </summary>
+public bool UrlIsLocalPath(string p)
 {
 }
  
-// ------------------  Dell specific functions------------------------
- 
-/// <summary>
-/// Returns App version
-/// </summary>
-public string version()
+/// <summary>
+/// Is the given url a local file path?
+/// </summary>
+public bool UriIsLocalPath(string p)
 {
 }
  
-public string copyright()
+// ------------------  Dell specific functions------------------------
+ 
+/// <summary>
+/// Returns App version
+/// </summary>
+public string version()
+{
+}
+ 
+public string copyright()
 {
 }
 ```
