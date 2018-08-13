@@ -111,7 +111,6 @@ Some basic VBA skills are required! Just download the <a href="https://github.co
 		<li>UrlIsLocalPath: Returns true or false whether an URL is local path</li>
 		<li>ColorAccessToHex: Converts MS Access colour number to HEX value</li>
 		<li>ColorHexToAccess: Converts Hex Colour value to MS Access colour number</li>
-		
 		<li>Save Clipboard images to local file: Saves image from clipboard to any local storage you provide</li>
 		<li>PadLeft and PadRight: Uses .NET string padding left and right</li>
 		<li>ByteToImage: Converts byte array to Picture</li>
