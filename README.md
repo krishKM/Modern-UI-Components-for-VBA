@@ -106,11 +106,18 @@ Some basic VBA skills are required! Just download the <a href="https://github.co
   	<a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#Other-Features-that-are-interesting">Other Features that are interesting</a>
 	<ul>
 		<li>GetCursorPosition: Returns cursor screen position</li>
+		<li>UrlIsReachable: Returns true or false whether an url is reachable</li>
+		<li>UrlIsValid: Returns true or false whether an URL is well formatted. </li>
+		<li>UrlIsLocalPath: Returns true or false whether an URL is local path</li>
+		<li>ColorAccessToHex: Converts MS Access colour number to HEX value</li>
+		<li>ColorHexToAccess: Converts Hex Colour value to MS Access colour number</li>
+		
 		<li>Save Clipboard images to local file: Saves image from clipboard to any local storage you provide</li>
 		<li>PadLeft and PadRight: Uses .NET string padding left and right</li>
 		<li>ByteToImage: Converts byte array to Picture</li>
 		<li>FTP(S) UPLOAD: Upload files to your ftp server securely</li>
 		<li>FTP Delete Remote File: Deletes a file from remote server</li>
+		<li>FTPFileExists: Checks whether a file exists in a FTP location</li>
 		<li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#exporttojson">ExportToJson</a>Allows MS Access users you to export queries, tables SQL results as JSON string </li>
 		<li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#ImportJSON">ImportJSON</a>Allows MS Access users to import records to table using JSON string arrays</li>
 		<li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#cool-context-menu-for-vba">Cool Context Menu</a>Simple context menu for quick selection.</li>
@@ -507,6 +514,21 @@ in code that would be:
 
 
 # Other Features that are interesting
+
+# DragMe
+A simple function that allows one to drag a borderless form.
+have a look here. 
+![DragME](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/DragMe.gif)
+
+How to use?
+```VBA
+	'simply use the mouseDown event
+	
+	Private Sub Label251_MouseDown(Button As Integer, Shift As Integer, X As Single, Y As Single)
+		Call gDll.DLL.DragMe(Me.hwnd)
+	End Sub
+
+```
 
 ### AreYouSure?
 a simple yes no popup returns true or false. Sometims you just want to confirm the user for yes or no action.
