@@ -184,10 +184,10 @@ in Action
 You can have html ```<a href="">text</a>``` tags in your message which will be translated into hyperlinks.
 ![Notification in action gif](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/Hyperlink.png)
 
-Local files as hyperlinks: <a href="F:\folderName\picture.png">ViewThisImage</a>
+Local files as hyperlinks: ```<a href="F:\folderName\picture.png">ViewThisImage</a>```
 
 Callback command:
-1. OpenForm hyperlink: <a href="DoCmd.OpenForm frmImageView,acNormal,,wherecondition:=id=2">OpenForm</a>
+1. OpenForm hyperlink: ```<a href="DoCmd.OpenForm frmImageView,acNormal,,wherecondition:=id=2">OpenForm</a>```
 ```VBA
 	Note: the docmd command does not contains any " or '
 	Filter, WhereCondition, DataMode, WindowMode must be named parameters. I.e. Filter:=FilterCondition or WhereCondition:=id=2
