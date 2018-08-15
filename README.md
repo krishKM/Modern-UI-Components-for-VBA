@@ -19,11 +19,30 @@ And of course with minimal code!
 
 # beta
 ```diff
+[New Controls]
 + Barcode control: Generate barcode from your strings in forms, reports. Works are nearly finished. Need to make it userfriendly
 + DropDown box added
-+ Simple and Extended context Menu needs your help to test
+
+[Context Menu]
++ Simple and Extended context Menu needs your help to test.
++ Extended MenuItem array can have GlyphIcons only free version though (check out glyphicon names in http://glyphicons.com/)
+
+[Toast]
++ Toast Notification can now open local files. I.e. <a href="F:\folderName\picture.png">Image</a>
++ Toast Notifications can now open a form in the host application. I.e. This hyperlink format will open the form "frmImageView" in the access application. <a href="DoCmd.OpenForm frmImageView,acNormal,,wherecondition:=id=2">OpenForm</a>
 
 ``` 
+
+## Current progress / bugfixings
+```VBA
+	[Toast Notifications]
+	1. Toast notification parsing hyperlink function corrected
+	
+	
+	[Context Menu]
+	1. Row Height is now fixed.
+	
+```
 
 # Be safe
 Use following sites to check for any malware for any files you download from online.
@@ -119,6 +138,7 @@ Some basic VBA skills are required! Just download the <a href="https://github.co
 		<li>FTPFileExists: Checks whether a file exists in a FTP location</li>
 		<li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#exporttojson">ExportToJson</a>Allows MS Access users you to export queries, tables SQL results as JSON string </li>
 		<li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#ImportJSON">ImportJSON</a>Allows MS Access users to import records to table using JSON string arrays</li>
+		<li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#dragme">Drag Me </a> Allows to move borderless form.</li>
 		<li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#cool-context-menu-for-vba">Cool Context Menu</a>Simple context menu for quick selection.</li>
 	</ul>
   </li>
@@ -135,7 +155,11 @@ I mainly use it to show messages that do not require action. I.e. A mail has arr
 ## customise your notification like you want:
 following customisations are possible now.
 ```
-1.Message   : can contain <a href="">text</a> for hyperlinks (any other html tags are ignored, hyperlink must begin with www or http or https (basically web links only?)
+1.Message   : can contain <a href="">text</a> for hyperlinks (any other html tags are ignored, hyperlink must begin with www or http or https (basically well formatted links only?)
+```diff
++ It is now possible to open local files. hyperlinks must be a local file format. I.e. <a href="F:\folderName\picture.png">
++ Testing: A call back command (Docmd.OpenForm only) can be embedded into the hyperlink
+```
 2.Duration in Milli-Seconds (default 2000. 0 will keep the notification for long time.  int.max)
 3.Background colour (html colour code)
 4.Font colour (html colour code)
@@ -156,14 +180,27 @@ in Action
 ![Notification in action gif](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/InAction.gif)
 ![Notification in action gif](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/InAction1.gif)
 
-#### how about little interaction with user and show some hyperlinks?
+## how about little interaction with user and show some hyperlinks?
 You can have html ```<a href="">text</a>``` tags in your message which will be translated into hyperlinks.
 ![Notification in action gif](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/Hyperlink.png)
+
+Local files as hyperlinks: <a href="F:\folderName\picture.png">ViewThisImage</a>
+
+Callback command:
+1. OpenForm hyperlink: <a href="DoCmd.OpenForm frmImageView,acNormal,,wherecondition:=id=2">OpenForm</a>
+```VBA
+	Note: the docmd command does not contains any " or '
+	Filter, WhereCondition, DataMode, WindowMode must be named parameters. I.e. Filter:=FilterCondition or WhereCondition:=id=2
+```
+
+
 
 ## Download 
 Download the sample and test it in your project. Please leave comment how you feel.
 <a href="https://github.com/krishKM/VBA_TOOLS/tree/master/samples"> Samples</a>
 
+
+<hr>
 <hr>
 
 # Show Cool DialogBox
@@ -178,6 +215,17 @@ I.e
 </ul>
 Meet the new simplified DialogBox for VBA users. This dialogbox will allow above listed features and should help you to keep your application colourful. :) This feature is still under development and could some feedback from testers.
 
+
+
+
+
+
+
+
+
+
+
+<HR>
 
 ![Cool DialogBox](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/DialogboxGreen.png)
 ![Cool DialogBox1](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/4Buttons.png)
@@ -194,9 +242,6 @@ a simplified version is also avilable (without HTML rendering)
 ![Cool DialogBox](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/CoolSimpleMessageBox.png)
 
 Allows one to show simple message box
-
-
-
 
 
 # Show cool Progressbar
