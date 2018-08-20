@@ -37,7 +37,12 @@ And of course with minimal code!
 ```VBA
 	[Toast Notifications]
 	1. Toast notification parsing hyperlink function corrected
+	2. Toast can now open Docmd.OpenForm
+	3. Toast can now execute local functions. I.e. <a href="ExecuteMe()"> Execute a function in the host application </a> will execute "ExecuteMe()" when clicked the link.
+		Make sure the functions end with ().
 	
+	[DialogBox (Simple)]
+	1. Simple DialogBox shares same hyperlink parsing function as Toast. Which can open docmd, and local functions.
 	
 	[Context Menu]
 	1. Row Height is now fixed.
@@ -191,6 +196,9 @@ Callback command:
 ```VBA
 	Note: the docmd command does not contains any " or '
 	Filter, WhereCondition, DataMode, WindowMode must be named parameters. I.e. Filter:=FilterCondition or WhereCondition:=id=2
+	
+	'Similarly you may also pass a function name which will be executed to the host application
+	<a href="ExecuteMe()"> Execute a function in the host application </a>
 ```
 
 
