@@ -60,9 +60,6 @@ https://www.virustotal.com/
 
 
 
-## History
-it all started with this question <a href="https://stackoverflow.com/questions/39224308/non-blocking-toast-like-notifications-for-microsoft-access-vba">SO Question</a> 
-
 ## What it does?
 Helps you to make your application more user-friendly by providing some .NET components and functions that you can use within your VBA application. Visually and functionally cooler than VBA!
 
