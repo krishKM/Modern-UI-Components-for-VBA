@@ -39,7 +39,8 @@ And of course with minimal code!
 	1. Toast notification parsing hyperlink function corrected
 	2. Toast can now open Docmd.OpenForm
 	3. Toast can now execute local functions. I.e. <a href="ExecuteMe()"> Execute a function in the host application </a> will execute "ExecuteMe()" when clicked the link.
-		Make sure the functions end with ().
+	4. Toast / Simple Dialogboxes can now execute local functions with parameters i.e. <a href="ExecuteMe('ParameterA','ParameterB')"> ExecuteMe </a>
+	4. Toast / Simple  Dialogboxes can now close itself after clicking a hyperlink. Use closeme="true" attribute. i.e. <a href="ExecuteMe('ParameterA','ParameterB')" closeme="true"> Execute and close Me </a>
 	
 	[DialogBox (Simple)]
 	1. Simple DialogBox shares same hyperlink parsing function as Toast. Which can open docmd, and local functions.
