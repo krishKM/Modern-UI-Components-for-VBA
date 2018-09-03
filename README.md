@@ -48,6 +48,11 @@ And of course with minimal code!
 	[Context Menu]
 	1. Row Height is now fixed.
 	
+	[Drag-N-Drop]
+	Drag and drop box can be sized. (cX=WidthSize, cY = heightSize)
+		Dim FilePaths As String
+		FilePaths = gDll.DLL.ShowDialogForFile("No multiple files allowed", False, CX:=820, CY:=364)
+	
 ```
 
 # Be safe
