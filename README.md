@@ -52,6 +52,9 @@ And of course with minimal code!
 	Drag and drop box can be sized. (cX=WidthSize, cY = heightSize)
 		Dim FilePaths As String
 		FilePaths = gDll.DLL.ShowDialogForFile("No multiple files allowed", False, CX:=820, CY:=364)
+		
+	[FTP upload and delete]
+	Ftp upload and delete functions improved
 	
 ```
 
@@ -141,9 +144,9 @@ Some basic VBA skills are required! Just download the <a href="https://github.co
 		<li>Save Clipboard images to local file: Saves image from clipboard to any local storage you provide</li>
 		<li>PadLeft and PadRight: Uses .NET string padding left and right</li>
 		<li>ByteToImage: Converts byte array to Picture</li>
-		<li>FTP(S) UPLOAD: Upload files to your ftp server securely</li>
-		<li>FTP Delete Remote File: Deletes a file from remote server</li>
-		<li>FTPFileExists: Checks whether a file exists in a FTP location</li>
+		<li><a href="https://github.com/krishKM/Modern-UI-Components-for-VBA/blob/master/README.md#ftps-upload"></a>FTP(S) UPLOAD: Upload files to your ftp server securely</li>
+		<li><a href="https://github.com/krishKM/Modern-UI-Components-for-VBA/blob/master/README.md#ftp-delete-remote-file"></a>FTP Delete Remote File: Deletes a file from remote server</li>
+		<li><a href="https://github.com/krishKM/Modern-UI-Components-for-VBA/blob/master/README.md#FTPFileExists"></a>FTPFileExists: Checks whether a file exists in a FTP location</li>
 		<li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#exporttojson">ExportToJson</a>Allows MS Access users you to export queries, tables SQL results as JSON string </li>
 		<li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#ImportJSON">ImportJSON</a>Allows MS Access users to import records to table using JSON string arrays</li>
 		<li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#dragme">Drag Me </a> Allows to move borderless form.</li>
@@ -632,6 +635,28 @@ something like Me.Image32.Picture = gDll.ByteToImage(ByteArray, "SaveLocationPat
 
 ### FTP(S) UPLOAD
 simple tool which uses WinScp to upload files securely to your host. Handy if you want to upload some files without doing too much VBA or having activeX components.
+```VBA
+	'Simply use as 
+	Debug.Print gDll.FTPUploadFile(ServerName, port, Username, Password, "F:\Projects\VBA_DLL\Modern Inputbox for vba purple.png", "/screenshots/", SSHFingerprintOfTheRemoteServer, Ftp, Explicit, False)
+	
+	Parameter list
+```
+```C#
+		/// <summary>
+        /// Uoloads a file to the given ftp server
+        /// </summary>
+        /// <param name="host">Host server</param>
+        /// <param name="port">Port number</param>
+        /// <param name="username">FTP UserName</param>
+        /// <param name="password">FTP password</param>
+        /// <param name="localFileName">Path to local file</param>
+        /// <param name="remoteLocation">Location in remote server</param>
+        /// <param name="hostCertificateFingerprint">Remote Server FingerPrint</param>
+        /// <param name="protocol">Ftp Protocol, ftp, sftp...</param>
+        /// <param name="ftpSecure">Type of connection, implicit, explicit</param>
+        /// <param name="giveUpSecurityAndAcceptAnyTlsHostCertificate">debug use only</param>
+        /// <returns>string representation of true or false or error message</returns>
+````
 
 ### FTP Delete Remote File
 Simply delete a file from your remote server. Returns true or false + error message as string.
