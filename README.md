@@ -133,10 +133,10 @@ Some basic VBA skills are required! Just download the <a href="https://github.co
 		<li>Save Clipboard images to local file: Saves image from clipboard to any local storage you provide</li>
 		<li>PadLeft and PadRight: Uses .NET string padding left and right</li>
 		<li>ByteToImage: Converts byte array to Picture</li>
-		<li><a href="https://github.com/krishKM/Modern-UI-Components-for-VBA/blob/master/README.md#ftps-upload"></a>FTP(S) UPLOAD: Upload files to your ftp server securely</li>
-		<li><a href="https://github.com/krishKM/Modern-UI-Components-for-VBA/blob/master/README.md#ftp-delete-remote-file"></a>FTP Delete Remote File: Deletes a file from remote server</li>
-		<li><a href="https://github.com/krishKM/Modern-UI-Components-for-VBA/blob/master/README.md#FTPFileExists"></a>FTPFileExists: Checks whether a file exists in a FTP location</li>
-		<li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#exporttojson">ExportToJson</a>Allows MS Access users you to export queries, tables SQL results as JSON string </li>
+		<li><a href="https://github.com/krishKM/Modern-UI-Components-for-VBA/blob/master/README.md#ftps-upload">FTP(S) UPLOAD:</a> Upload files to your ftp server securely</li>
+		<li><a href="https://github.com/krishKM/Modern-UI-Components-for-VBA/blob/master/README.md#ftp-delete-remote-file">FTP Delete Remote File:</a> Deletes a file from remote server</li>
+		<li><a href="https://github.com/krishKM/Modern-UI-Components-for-VBA/blob/master/README.md#FTPFileExists">FTPFileExists</a> Checks whether a file exists in a FTP location</li>
+		<li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#exporttojson">ExportToJson</a>Allows MS Access users you to export queries, tables SQL results as JSON string</li>
 		<li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#ImportJSON">ImportJSON</a>Allows MS Access users to import records to table using JSON string arrays</li>
 		<li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#dragme">Drag Me </a> Allows to move borderless form.</li>
 		<li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#cool-context-menu-for-vba">Cool Context Menu</a>Simple context menu for quick selection.</li>
