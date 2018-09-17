@@ -11,9 +11,10 @@ And of course with minimal code!
 - NOTE:
 - this is an evolving project. Function names from one version to another might varry, please test your wrappers before updating to the newest one.
 
+- JsonConverter replaced with Newtonsoft.JSON
+
 - If you have any new suggestions, please feel free to let me know.
 
-+ DragMe function added any borderless access form can be dragged with a single mouse click.
 + 
 ```
 
@@ -21,32 +22,17 @@ And of course with minimal code!
 ```diff
 [New Controls]
 + Barcode control: Generate barcode from your strings in forms, reports. Works are nearly finished. Need to make it userfriendly
-+ DropDown box added
 
 [Context Menu]
 + Simple and Extended context Menu needs your help to test.
 + Extended MenuItem array can have GlyphIcons only free version though (check out glyphicon names in http://glyphicons.com/)
 
-[Toast]
-+ Toast Notification can now open local files. I.e. <a href="F:\folderName\picture.png">Image</a>
-+ Toast Notifications can now open a form in the host application. I.e. This hyperlink format will open the form "frmImageView" in the access application. <a href="DoCmd.OpenForm frmImageView,acNormal,,wherecondition:=id=2">OpenForm</a>
-
 ``` 
 
 ## Current progress / bugfixings
 ```VBA
-	[Toast Notifications]
-	1. Toast notification parsing hyperlink function corrected
-	2. Toast can now open Docmd.OpenForm
-	3. Toast can now execute local functions. I.e. <a href="ExecuteMe()"> Execute a function in the host application </a> will execute "ExecuteMe()" when clicked the link.
-	4. Toast / Simple Dialogboxes can now execute local functions with parameters i.e. <a href="ExecuteMe('ParameterA','ParameterB')"> ExecuteMe </a>
-	4. Toast / Simple  Dialogboxes can now close itself after clicking a hyperlink. Use closeme="true" attribute. i.e. <a href="ExecuteMe('ParameterA','ParameterB')" closeme="true"> Execute and close Me </a>
 	
-	[DialogBox (Simple)]
-	1. Simple DialogBox shares same hyperlink parsing function as Toast. Which can open docmd, and local functions.
-	
-	[Context Menu]
-	1. Row Height is now fixed.
+	- JsonConverter replaced with NewtonSoft.JSON
 	
 	[Drag-N-Drop]
 	Drag and drop box can be sized. (cX=WidthSize, cY = heightSize)
@@ -55,6 +41,9 @@ And of course with minimal code!
 		
 	[FTP upload and delete]
 	Ftp upload and delete functions improved
+	
+	[JSON]
+	Json parsing and converting improved.
 	
 ```
 
@@ -205,6 +194,17 @@ Callback command:
 	
 	'Similarly you may also pass a function name which will be executed to the host application
 	<a href="ExecuteMe()"> Execute a function in the host application </a>
+	
+	
+		
+	[Toast Notifications]
+	1. Toast notification parsing hyperlink function corrected
+	2. Toast can now open Docmd.OpenForm
+	3. Toast can now execute local functions. I.e. <a href="ExecuteMe()"> Execute a function in the host application </a> will execute "ExecuteMe()" when clicked the link.
+	4. Toast / Simple Dialogboxes can now execute local functions with parameters i.e. <a href="ExecuteMe('ParameterA','ParameterB')"> ExecuteMe </a>
+	4. Toast / Simple  Dialogboxes can now close itself after clicking a hyperlink. Use closeme="true" attribute. i.e. <a href="ExecuteMe('ParameterA','ParameterB')" closeme="true"> Execute and close Me </a>
+	
+	
 ```
 
 
