@@ -62,7 +62,10 @@ https://www.virustotal.com/
 Helps you to make your application more user-friendly by providing some .NET components and functions that you can use within your VBA application. Visually and functionally cooler than VBA!
 
 ## How to use?
-Some basic VBA skills are required! Just download the <a href="https://github.com/krishKM/VBA_TOOLS/tree/master/samples"> sample</a> ACCDB from sample folder where you can find the Dll. Copy and paste the functions you require to your VBA application. 
+Some basic VBA skills are required! 
+Just download the <a href="https://github.com/krishKM/VBA_TOOLS/tree/master/samples"> Dll + bin folder </a> from the sample folder and add them to your project folder. The ACCDB contains samples where you can copy and paste it to your VBA application.
+
+**Keep the VBA_TOOLS.Dll & Bin folder where your vba project is to enjoy all functions.**
 
 
 # Interesting features
