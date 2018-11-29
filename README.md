@@ -9,11 +9,8 @@ And of course with minimal code!
 
 ```diff
 - NOTE:
+- If you get an error regarding unable to load find/load dlls. Please make sure you have the bin folder where your project is AND right click on vba_tools.dll => property => unblock. Do the same for all dlls in the bin folder.
 - this is an evolving project. Function names from one version to another might varry, please test your wrappers before updating to the newest one.
-
-- JsonConverter replaced with Newtonsoft.JSON
-
-- If you have any new suggestions, please feel free to let me know.
 
 + 
 ```
