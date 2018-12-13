@@ -12,36 +12,6 @@ And of course with minimal code!
 - If you get an error regarding unable to load find/load dlls. Please make sure you have the bin folder where your project is AND right click on vba_tools.dll => property => unblock. Do the same for all dlls in the bin folder.
 - this is an evolving project. Function names from one version to another might varry, please test your wrappers before updating to the newest one.
 
-+ 
-```
-
-# beta
-```diff
-[New Controls]
-+ Barcode control: Generate barcode from your strings in forms, reports. Works are nearly finished. Need to make it userfriendly
-
-[Context Menu]
-+ Simple and Extended context Menu needs your help to test.
-+ Extended MenuItem array can have GlyphIcons only free version though (check out glyphicon names in http://glyphicons.com/)
-
-``` 
-
-## Current progress / bugfixings
-```VBA
-	
-	- JsonConverter replaced with NewtonSoft.JSON
-	
-	[Drag-N-Drop]
-	Drag and drop box can be sized. (cX=WidthSize, cY = heightSize)
-		Dim FilePaths As String
-		FilePaths = gDll.DLL.ShowDialogForFile("No multiple files allowed", False, CX:=820, CY:=364)
-		
-	[FTP upload and delete]
-	Ftp upload and delete functions improved
-	
-	[JSON]
-	Json parsing and converting improved.
-	
 ```
 
 # Be safe
@@ -51,8 +21,12 @@ https://www.virustotal.com/
 
 ![OnlineScanner](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/vbatoolsIsSafe.png)
 
-
-
+## Current progress / bugfixings
+```VBA
+	+ All functions are grouped under appropriate class names.  i.e Dll.String.AllStringRelatedFunctions
+	- Make sure, you have update all your previous codings
+	
+```
 
 
 ## What it does?
@@ -65,84 +39,259 @@ Just download the <a href="https://github.com/krishKM/VBA_TOOLS/tree/master/samp
 **Keep the VBA_TOOLS.Dll & Bin folder where your vba project is to enjoy all functions.**
 
 
-# Interesting features
+
+# Interesting List of features
+(Update hasn't been released with these new functions)
 <ul>
-  <li>
-    <a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#show-non-blocking-notifications">Show non-blocking notifications</a>
-  </li>
-  <li>
-    <a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#show-cool-dialogbox">Show Cool DialogBox</a>
-    <ul>
-      <li>
-        <a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#cool-simple-messageBox">Cool Simple MessageBox</a>
-      </li>
-      <li>
-        <a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#areyousure">Are you sure?</a> A simple yes no dialog box.
-      </li>
-    </ul>
-  </li>
-  <li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#show-cool-progressbar"> Show Cool Progressbar</a></li>
-  <li>
-  	<a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#other-Features-that-are-interesting"> Download a file with progressbar</a>
+	<li>ContextMenu
 	<ul>
-		<li>Download a file to local location	</li>
+		<li>Show Cool Context Menu</li>
 	</ul>
-  </li>
-  
-  <li>
-  		<a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#show-cool-inputboxes">Show Cool InputBoxes</a>
-		<ul>
-			<li>Email with validation</li>
-			<li>Password</li>
-			<li>Multiline / single line</li>
-			<li>Number only</li>
-			<li>Dates with validation</li>
-			<li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#show-dropdown-box">Show DropDown box</a></li>
-		</ul>
-  </li>
-  <li>
-  	<a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#drag-and-drop-openfiledialog">Drag and drop OpenFileDialog</a>
-	<ul>
-			<li>A simple open file dialog box that supports drag and drop function</li>
-		</ul>
-  </li>
-  <li>
-  	<a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#load-picture-from-url-to-imagecontrol-without-saving">Load Picture from URL to ImageControl without saving</a>
-	<ul>
-			<li>Load web urls</li>
-			<li>Load local pictures</li>
-			<li>Convert blob fields to pictures</li>
-		</ul>
-  </li>
-  <li>
-  	<a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#barcode-control-for-vba">Barcode Control</a>
+	</li>
+	<li>Barcode Control
 	<ul>
 		<li>Currently supports Code39, Code128, QrCode</li>
 		<li>Currently under testing</li>
 	</ul>
-  </li>
-  <li>
-  	<a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#Other-Features-that-are-interesting">Other Features that are interesting</a>
+	</li>
+	<li>Colour
 	<ul>
-		<li>GetCursorPosition: Returns cursor screen position</li>
-		<li>UrlIsReachable: Returns true or false whether an url is reachable</li>
-		<li>UrlIsValid: Returns true or false whether an URL is well formatted. </li>
-		<li>UrlIsLocalPath: Returns true or false whether an URL is local path</li>
-		<li>ColorAccessToHex: Converts MS Access colour number to HEX value</li>
-		<li>ColorHexToAccess: Converts Hex Colour value to MS Access colour number</li>
-		<li>Save Clipboard images to local file: Saves image from clipboard to any local storage you provide</li>
-		<li>PadLeft and PadRight: Uses .NET string padding left and right</li>
-		<li>ByteToImage: Converts byte array to Picture</li>
-		<li><a href="https://github.com/krishKM/Modern-UI-Components-for-VBA/blob/master/README.md#ftps-upload">FTP(S) UPLOAD:</a> Upload files to your ftp server securely</li>
-		<li><a href="https://github.com/krishKM/Modern-UI-Components-for-VBA/blob/master/README.md#ftp-delete-remote-file">FTP Delete Remote File:</a> Deletes a file from remote server</li>
-		<li><a href="https://github.com/krishKM/Modern-UI-Components-for-VBA/blob/master/README.md#FTPFileExists">FTPFileExists</a> Checks whether a file exists in a FTP location</li>
-		<li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#exporttojson">ExportToJson</a>Allows MS Access users you to export queries, tables SQL results as JSON string</li>
-		<li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#ImportJSON">ImportJSON</a>Allows MS Access users to import records to table using JSON string arrays</li>
-		<li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#dragme">Drag Me </a> Allows to move borderless form.</li>
-		<li><a href="https://github.com/krishKM/VBA_TOOLS/blob/master/README.md#cool-context-menu-for-vba">Cool Context Menu</a>Simple context menu for quick selection.</li>
+		<li>HexToAccess</li>
+		<li>AccessToHex</li>
 	</ul>
-  </li>
+	</li>
+	<li>Dialog Boxes
+	<ul>
+		<li>Cool DialogBox</li>
+		<li>Extended Cool DialogBox</li>
+		<li>Cool Simple DialogBox</li>
+		<li>Simple Are you sure?</li>
+		<li>Drag and Drop OpenFileDialog
+		<ul>
+			<li>A simple open file dialog box that supports drag </li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>Display
+	<ul>
+		<li>GetNumberOfMonitors
+		<ul>
+			<li>Returns number of monitors </li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>
+	<ul>
+		<li>GetPrimaryMonitorHandle
+		<ul>
+			<li>Returns handle to primary monitor</li>
+		</ul>
+		</li>
+		<li>GetPrimaryMonitorBounds
+		<ul>
+			<li>Get information about the primary monitor</li>
+		</ul>
+		</li>
+		<li>GetMonitorBoundsByHandle
+		<ul>
+			<li>Returns monitor information from a window handle.</li>
+		</ul>
+		</li>
+		<li>GetCursorPosition</li>
+	</ul>
+	</li>
+	<li>Form
+	<ul>
+		<li>Make Transparent Window</li>
+		<li>Change Access background colour</li>
+		<li>Drage Me
+		<ul>
+			<li>Allows to move a borderless form</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>FTP
+	<ul>
+		<li>FTPS_UPLOAD
+		<ul>
+			<li>uploads file to given ftp server</li>
+		</ul>
+		</li>
+		<li>FTPDeleteFile
+		<ul>
+			<li>deletes a file from given ftp location</li>
+		</ul>
+		</li>
+		<li>FTPFileExists
+		<ul>
+			<li>Checks if a given file exists in given ftp location</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li></li>
+	<li></li>
+	<li>Graphics
+	<ul>
+		<li>Load Picture from URL to ImageControl without saving</li>
+		<li>Load web urls</li>
+		<li>Load local pictures</li>
+		<li>Convert blob fields to pictures</li>
+		<li>MeasureText
+		<ul>
+			<li>Calculates height and width in pixels for a given text</li>
+		</ul>
+		</li>
+		<li>ByteToImage
+		<ul>
+			<li>Converts ByteArray to an Image and saves in a provided location.</li>
+		</ul>
+		</li>
+		<li>ByteToBitmap
+		<ul>
+			<li>Converts Byte Array to a bitmap</li>
+		</ul>
+		</li>
+		<li>TakeScreenShotFromHwnd
+		<ul>
+			<li>Takes a screenshot of a window by provided handle. Returns byte array </li>
+		</ul>
+		</li>
+		<li>TakeScreenShot
+		<ul>
+			<li>Take screenshot of entire desktop. Returns byte array</li>
+		</ul>
+		</li>
+		<li>TakeScreenShot1
+		<ul>
+			<li>Takes screenshot and saves in a given path</li>
+		</ul>
+		</li>
+		<li>PictureFromUrl
+		<ul>
+			<li>Loads picture from an url and returns byte array</li>
+		</ul>
+		</li>
+		<li>SaveClipboardToImage
+		<ul>
+			<li>Saves clipboard picture to a given path and format</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>InputBoxes
+	<ul>
+		<li>Show Cool InputBox</li>
+		<li>Email with validation</li>
+		<li>Password</li>
+		<li>Multiline / single line</li>
+		<li>Number only</li>
+		<li>Dates with validation</li>
+		<li>Show DropDown box</li>
+	</ul>
+	</li>
+	<li>JSON
+	<ul>
+		<li>Uses Newtonsoft.Json</li>
+		<li>ExportToJSON
+		<ul>
+			<li>Allows MS Access users you to export queries, tables SQL results as JSON string</li>
+		</ul>
+		</li>
+		<li>ImportJSON
+		<ul>
+			<li>Allows MS Access users to import records to table using JSON string arrays</li>
+		</ul>
+		</li>
+		<li>JSONString
+		<ul>
+			<li>String expression of a Newtonsoft.Json object</li>
+		</ul>
+		</li>
+		<li>JSONGetObject
+		<ul>
+			<li>retireve Json object by property name</li>
+		</ul>
+		</li>
+		<li>JSONSetObject
+		<ul>
+			<li>Adds a property to Json object</li>
+		</ul>
+		</li>
+		<li>JSONGetValue
+		<ul>
+			<li>Retrieves a value from json object</li>
+		</ul>
+		</li>
+		<li>JSONToObject
+		<ul>
+			<li>Converts string json to a dynamic object</li>
+		</ul>
+		</li>
+		<li>JSONSerialize
+		<ul>
+			<li>Returns string expression of a dynamic json object</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>NetClass
+	<ul>
+		<li>UrlIsReachable
+		<ul>
+			<li>Returns true or false whether the url is reachable</li>
+		</ul>
+		</li>
+		<li>UrlIsValid
+		<ul>
+			<li>Returns true or false whether the url is well formatted</li>
+		</ul>
+		</li>
+		<li>UrlIsLocalPath
+		<ul>
+			<li>Is the given url a local file path?</li>
+		</ul>
+		</li>
+		<li>GetExternalIP</li>
+	</ul>
+	</li>
+	<li>Notification
+	<ul>
+		<li>Show Non-Blocking Notifications</li>
+		<li>Show Success</li>
+		<li>Show Warnings</li>
+		<li>Show Error</li>
+	</ul>
+	</li>
+	<li>ProgressBar
+	<ul>
+		<li>Show Cool ProgressBar</li>
+	</ul>
+	</li>
+	<li>RegEx
+	<ul>
+		<li>IsMatch</li>
+		<li>GetFirstMatch</li>
+		<li>Replace</li>
+	</ul>
+	</li>
+	<li>String
+	<ul>
+		<li>PadLeft</li>
+		<li>PadRight</li>
+		<li>TrimEnd</li>
+		<li>TrimStart</li>
+		<li>StartsWith</li>
+		<li>EndsWith</li>
+		<li>.NET string.format</li>
+	</ul>
+	</li>
+	<li></li>
 </ul>
+
 
 ### [Show non-blocking notifications]
 Inspired from Toastr (https://github.com/CodeSeven/toastr).
