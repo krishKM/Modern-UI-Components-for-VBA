@@ -21,6 +21,9 @@ https://www.virustotal.com/
 
 ![OnlineScanner](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/vbatoolsIsSafe.png)
 
+# Unblock the Dlls if necessary.
+![UnblockADllPicture](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/unblockADll.png)
+
 ## Current progress / bugfixings
 ```VBA
 	+ All functions are grouped under appropriate class names.  i.e Dll.String.AllStringRelatedFunctions
