@@ -30,7 +30,7 @@ https://www.virustotal.com/
 	- Make sure, you have update all your previous codings
 	
 	+ Make any Window transparent: Make either entire window as transparent or set your key colour and only make those pixels transparent.
-	+ 
+	+ IsKeyDown(keyCode): returns true or false, whether a given key is pressed or not. This can be used in any event and useful to check whether CTRL or Shift key is pressed.
 	
 ```
 
