@@ -29,6 +29,9 @@ https://www.virustotal.com/
 	+ All functions are grouped under appropriate class names.  i.e Dll.String.AllStringRelatedFunctions
 	- Make sure, you have update all your previous codings
 	
+	+ Make any Window transparent: Make either entire window as transparent or set your key colour and only make those pixels transparent.
+	+ 
+	
 ```
 
 
