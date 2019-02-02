@@ -396,8 +396,8 @@ Meet the new simplified DialogBox for VBA users. This dialogbox will allow above
 
 <HR>
 
-![Cool DialogBox](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/DialogboxGreen.png)
-![Cool DialogBox1](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/4Buttons.png)
+![Cool DialogBox](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/DialogboxGreen.png)
+![Cool DialogBox1](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/4Buttons.png)
 
 There is vba wrapper in the sample accdb which can be extended as per your need. It uses the 3rd party JSON Converter plugin with some miner fixes from my side.
 
@@ -408,7 +408,7 @@ There is vba wrapper in the sample accdb which can be extended as per your need.
 
 a simplified version is also avilable (without HTML rendering)
 # Cool Simple MessageBox
-![Cool DialogBox](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/CoolSimpleMessageBox.png)
+![Cool DialogBox](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/CoolSimpleMessageBox.png)
 
 Allows one to show simple message box
 
@@ -426,10 +426,10 @@ crucial element when informing users about a progress. Meet the cool progressbar
   
   gdll.CloseProgressbar ProgressbarId 'Will close the progressbar
 ```
-![Cool ProgressbarGreen](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/ProgressBar.png)
+![Cool ProgressbarGreen](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/ProgressBar.png)
 
 As usual, you are allowed to change theme colours as per your taste.
-![Cool ProgressbarRed](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/ProgressBarRed.png)
+![Cool ProgressbarRed](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/ProgressBarRed.png)
 
 ### note:
 ```ShowProgressBar and SetProgressBar``` returns an ID which you can refer your progressbar to. This also allows VBA users to have multiple progressbars at the same time. 
@@ -438,7 +438,7 @@ As usual, you are allowed to change theme colours as per your taste.
 InputBox another heavily used component. Some like the plain system looking InputBox but we love the modern UI colours :)
 What would you chose from these tables?
 
-![InputBoxCollection](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/InputBoxDefault.png)  ![InputBoxCollection](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/InputBoxMultiline.png) 
+![InputBoxCollection](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/InputBoxDefault.png)  ![InputBoxCollection](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/InputBoxMultiline.png) 
 
 ## Nice colours! but what's the point?
 The new InputBoxes comes with some inbuilt functions and can be configured accordingly.
@@ -472,17 +472,17 @@ and following parameters are accepted:
 
 in action:
 
-![InputBoxCollection](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/InputBox.png)
+![InputBoxCollection](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/InputBox.png)
 
 as always we can change theme colours:)
 
-![purple input box](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/InputBoxPurple.png)
+![purple input box](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/InputBoxPurple.png)
 
 Download <a href="https://github.com/krishKM/VBA_TOOLS/tree/master/samples"> sample</a>
 
 # [Show DropDown Box]
 Requested from a VBA_TOOLS user. Like other user inputboxes, you can now let your user to select from a cool dropdown box.
-![purple input box](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/DropDownBox.png)
+![purple input box](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/DropDownBox.png)
 
 When we decided to make a cool dropdown box, we thought about reasons for not using existing Ms Access DropDown box.
 I personally think, showing icons in a dropdown box would be an amazing idea! :) In addition, standard DropDownBox does not allow one to search partially within the content. That is, being able to search any part of the dropdown selection.
@@ -665,8 +665,8 @@ How to use it?
 '    CreateBarcode(Symbology symbology, string barcodeData, int width, int height, float multiplier )
 
 ```
-![qrBarcode.png](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/qrBarcode.png)
-![Code39Barcode.png](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/Code39barcode.png)
+![qrBarcode.png](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/qrBarcode.png)
+![Code39Barcode.png](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/Code39barcode.png)
 
 # Cool Context Menu for vba
 [Under testing]: testers needed. This function is currently not wrapped. Means more parameters will be added once ready for publish
@@ -755,7 +755,7 @@ It is also possible to colour theme the AreYouSureBox by providing Hex Colour co
 ? gDll.AreYouSureE(Me, "#aa66cc", "#000000", "#aa66cc", "#F65656") or 
 ?gDll.AreYouSureE(, gBootstrap.default_color_dark, gBootstrap.WHITE, gBootstrap.AMBER, gBootstrap.TEAL_LIGHTEN_3)
 ```
-![AreYouSureCollection](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/AreYouSureCollection.png)
+![AreYouSureCollection](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/AreYouSureCollection.png)
 
 ### Download a file and show progressbar for vba
 Another cool feature. This function allows you to download a file from the internet and shows the download progress using above cool progressbar.
