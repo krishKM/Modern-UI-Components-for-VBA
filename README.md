@@ -731,7 +731,7 @@ in code that would be:
 # DragMe
 A simple function that allows one to drag a borderless form.
 have a look here. 
-![DragME](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/DragMe.gif)
+![DragME](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/VBA-RICH-UI-DragMe.gif)
 
 How to use?
 ```VBA
