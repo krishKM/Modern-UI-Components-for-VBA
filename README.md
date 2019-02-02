@@ -323,7 +323,7 @@ following customisations are possible now.
 
 
 
-![picture of 3 notifications](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/collections.png)
+![picture of 3 notifications](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/VBA-RICH-UI-collections.png)
 ```VBA
 'used commands
 Toastr.Toast "Ups something went wrong!",vberror,0
@@ -396,8 +396,8 @@ Meet the new simplified DialogBox for VBA users. This dialogbox will allow above
 
 <HR>
 
-![Cool DialogBox](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/DialogboxGreen.png)
-![Cool DialogBox1](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/4Buttons.png)
+![Cool DialogBox](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/VBA-RICH-UI-DialogboxGreen.png)
+![Cool DialogBox1](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/VBA-RICH-DIALOG-BOX.png)
 
 There is vba wrapper in the sample accdb which can be extended as per your need. It uses the 3rd party JSON Converter plugin with some miner fixes from my side.
 
@@ -408,7 +408,7 @@ There is vba wrapper in the sample accdb which can be extended as per your need.
 
 a simplified version is also avilable (without HTML rendering)
 # Cool Simple MessageBox
-![Cool DialogBox](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/CoolSimpleMessageBox.png)
+![Cool DialogBox](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/VBA-RICH-UI-CoolSimpleMessageBox.png)
 
 Allows one to show simple message box
 
@@ -426,10 +426,10 @@ crucial element when informing users about a progress. Meet the cool progressbar
   
   gdll.CloseProgressbar ProgressbarId 'Will close the progressbar
 ```
-![Cool ProgressbarGreen](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/ProgressBar.png)
+![Cool ProgressbarGreen](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/VBA-RICH-UI-ProgressBar.png)
 
 As usual, you are allowed to change theme colours as per your taste.
-![Cool ProgressbarRed](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/ProgressBarRed.png)
+![Cool ProgressbarRed](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/VBA-RICH-UI-ProgressBarRed.png)
 
 ### note:
 ```ShowProgressBar and SetProgressBar``` returns an ID which you can refer your progressbar to. This also allows VBA users to have multiple progressbars at the same time. 
@@ -438,7 +438,7 @@ As usual, you are allowed to change theme colours as per your taste.
 InputBox another heavily used component. Some like the plain system looking InputBox but we love the modern UI colours :)
 What would you chose from these tables?
 
-![InputBoxCollection](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/InputBoxDefault.png)  ![InputBoxCollection](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/InputBoxMultiline.png) 
+![InputBoxCollection](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/InputBoxDefault.png)  ![InputBoxCollection](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/VBA-RICH-UI-InputBoxMultiline.png) 
 
 ## Nice colours! but what's the point?
 The new InputBoxes comes with some inbuilt functions and can be configured accordingly.
@@ -476,7 +476,7 @@ in action:
 
 as always we can change theme colours:)
 
-![purple input box](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/InputBoxPurple.png)
+![purple input box](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/VBA-RICH-UI-InputBoxPurple.png)
 
 Download <a href="https://github.com/krishKM/VBA_TOOLS/tree/master/samples"> sample</a>
 
@@ -577,7 +577,7 @@ View in action:
 ![File drag and drop gif](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/FileDropInAction.gif)
 
 Errors
-![File drag and drop error gif](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/FileDropErrorInAction.gif)
+![File drag and drop error gif](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/VBA-RICH-UI-DRAG-DROP.gif)
 <hr>
 
 
@@ -675,7 +675,7 @@ What can I say? Probably most vba users wished this control existed out of the b
 Of course styleable, moveable and iconed menu items.
 
 Enough said. lets see in action.
-![ContextMenuPicture](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/CoolContextMenu.gif)
+![ContextMenuPicture](https://github.com/krishKM/VBA_TOOLS/blob/master/screenshots/VBA-RICH-UI-CoolContextMenu.gif)
 
 Since we've got your attention now, let's see how this control works. There are two version
 1>Simple: Just takes an array of strings as menu items and returns the menu item text as the selected value.
@@ -755,7 +755,7 @@ It is also possible to colour theme the AreYouSureBox by providing Hex Colour co
 ? gDll.AreYouSureE(Me, "#aa66cc", "#000000", "#aa66cc", "#F65656") or 
 ?gDll.AreYouSureE(, gBootstrap.default_color_dark, gBootstrap.WHITE, gBootstrap.AMBER, gBootstrap.TEAL_LIGHTEN_3)
 ```
-![AreYouSureCollection](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/AreYouSureCollection.png)
+![AreYouSureCollection](https://raw.githubusercontent.com/krishKM/VBA_TOOLS/master/screenshots/VBA-RICH-UI-AreYouSureCollection.png)
 
 ### Download a file and show progressbar for vba
 Another cool feature. This function allows you to download a file from the internet and shows the download progress using above cool progressbar.
