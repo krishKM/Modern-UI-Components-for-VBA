@@ -50,34 +50,40 @@ Just download the <a href="https://github.com/krishKM/VBA_TOOLS/tree/master/samp
 (Update hasn't been released with these new functions)
 <ul>
 	<li>ContextMenu
-	<ul>
-		<li>Show Cool Context Menu</li>
-	</ul>
+		<ul>
+			<li>Show Cool Context Menu</li>
+		</ul>
 	</li>
 	<li>Barcode Control
-	<ul>
-		<li>Currently supports Code39, Code128, QrCode</li>
-		<li>Currently under testing</li>
-	</ul>
+		<ul>
+			<li>Currently supports Code39, Code128, QrCode</li>
+			<li>Currently under testing</li>
+		</ul>
 	</li>
 	<li>Colour
-	<ul>
-		<li>HexToAccess</li>
-		<li>AccessToHex</li>
-	</ul>
+		<ul>
+			<li>HexToAccess</li>
+			<li>AccessToHex</li>
+		</ul>
+	</li>
+	<li>DB Class: (Only supported MySQL)
+		<ul>
+			<li>ExecuteScalar	: executes a MySql select query and returns first row first column object</li>
+			<li>ExecuteNonQuery	: executes a MySql update/insert query and returns true or false if success.</li>
+		</ul>
 	</li>
 	<li>Dialog Boxes
-	<ul>
-		<li>Cool DialogBox</li>
-		<li>Extended Cool DialogBox</li>
-		<li>Cool Simple DialogBox</li>
-		<li>Simple Are you sure?</li>
-		<li>Drag and Drop OpenFileDialog
 		<ul>
-			<li>A simple open file dialog box that supports drag </li>
+			<li>Cool DialogBox</li>
+			<li>Extended Cool DialogBox</li>
+			<li>Cool Simple DialogBox</li>
+			<li>Simple Are you sure?</li>
+			<li>Drag and Drop OpenFileDialog
+			<ul>
+				<li>A simple open file dialog box that supports drag </li>
+			</ul>
+			</li>
 		</ul>
-		</li>
-	</ul>
 	</li>
 	<li>Display
 	<ul>
