@@ -32,6 +32,10 @@ https://www.virustotal.com/
 	+ Make any Window transparent: Make either entire window as transparent or set your key colour and only make those pixels transparent.
 	+ IsKeyDown(keyCode): returns true or false, whether a given key is pressed or not. This can be used in any event and useful to check whether CTRL or Shift key is pressed.
 	
+	+ object ExecuteScalar : (DatabaseType dbType, string connectionString, string sql) :Executes and SQL and returns first row first column of the result set or an empty string
+	+ bool ExecuteNonQuery(DatabaseType dbType, string connectionString, string sql)	:Returns true or false if the nonQuery sql command was success
+	+ string MySqlGetAvailableServerFromList(string[] connectionString)					:Takes array of connetionstrings and returns first reachable connectionstring. or ""
+	+ bool MySqlServerIsReachable(string connectionString)								:Connects to a MySql server using the connectionstring and returns true or false
 ```
 
 
@@ -70,6 +74,8 @@ Just download the <a href="https://github.com/krishKM/VBA_TOOLS/tree/master/samp
 		<ul>
 			<li>ExecuteScalar	: executes a MySql select query and returns first row first column object</li>
 			<li>ExecuteNonQuery	: executes a MySql update/insert query and returns true or false if success.</li>
+			<li>string MySqlGetAvailableServerFromList(string[] connectionString)					:Takes array of connetionstrings and returns first reachable connectionstring. or ""</li>
+			<li>bool MySqlServerIsReachable(string connectionString)								:Connects to a MySql server using the connectionstring and returns true or false</li>
 		</ul>
 	</li>
 	<li>Dialog Boxes
