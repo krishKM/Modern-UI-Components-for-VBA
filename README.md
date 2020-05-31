@@ -74,8 +74,10 @@ Just download the <a href="https://github.com/krishKM/VBA_TOOLS/tree/master/samp
 		<ul>
 			<li>ExecuteScalar	: executes a MySql select query and returns first row first column object</li>
 			<li>ExecuteNonQuery	: executes a MySql update/insert query and returns true or false if success.</li>
-			<li>string MySqlGetAvailableServerFromList(string[] connectionString)					:Takes array of connetionstrings and returns first reachable connectionstring. or ""</li>
-			<li>bool MySqlServerIsReachable(string connectionString)								:Connects to a MySql server using the connectionstring and returns true or false</li>
+			<li>string MySqlGetAvailableServerFromList(string[] connectionString)</li>
+				<ul>Takes array of connetionstrings and returns first reachable connectionstring. or "".<br/>Handy if you have multiple back-end servers and would like to know which one is reachable. Uses threads so it's fast!</ul>
+			<li>bool MySqlServerIsReachable(string connectionString)</li>
+				<ul>:Connects to a MySql server using the connectionstring and returns true or false</ul>
 		</ul>
 	</li>
 	<li>Dialog Boxes
