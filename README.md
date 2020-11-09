@@ -26,6 +26,7 @@ https://www.virustotal.com/
 
 ## Current progress / bugfixings
 ```VBA
+	+ Toast now takes json options. minor bugs fixed in dialog forms
 	+ All functions are grouped under appropriate class names.  i.e Dll.String.AllStringRelatedFunctions
 	- Make sure, you have update all your previous codings
 	
