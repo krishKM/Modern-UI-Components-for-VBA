@@ -26,6 +26,13 @@ https://www.virustotal.com/
 
 ## Current progress / bugfixings
 ```VBA
+	+ 27/01/2022: adding attachement from outlook on 64bit office fixed.
+				: Mysql nuget packages updated.
+				: WebApi prefers tls 1.2
+				: Drag&Drop few bugs corrected + shows number of files dropped (if closeAfterSelection=false is set.)
+				: x86 and x64 are separately built and zipped in their own zip file
+
+	previous:
 	+ Toast now takes json options. minor bugs fixed in dialog forms
 	+ All functions are grouped under appropriate class names.  i.e Dll.String.AllStringRelatedFunctions
 	- Make sure, you have update all your previous codings
